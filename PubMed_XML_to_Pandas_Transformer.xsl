@@ -69,6 +69,7 @@
       <xsl:value-of select='CitationSubset'/>
     </xsl:element>
     <xsl:apply-templates select="MeshHeadingList"/>
+    <xsl:apply-templates select="SupplMeshList"/>
   </xsl:template>
 
   <!-- MedlineCitation/Article -->
@@ -188,6 +189,15 @@
         <xsl:variable name="QualifierName"><xsl:for-each select="QualifierName"><xsl:value-of select ='concat(", {QualifierName: ", text(), "||UI: ", @UI, "||MajorTopicYN: ", @MajorTopicYN, "}")'/></xsl:for-each></xsl:variable>
         <xsl:if test="position() != 1">, </xsl:if>
         <xsl:value-of select='concat("[",$DescriptorName, $QualifierName, "]")'/>
+      </xsl:for-each>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="SupplMeshList">
+    <xsl:element name="SupplMeshList">
+      <xsl:for-each select="SupplMeshName">
+        <xsl:if test="position() != 1">, </xsl:if>
+        <xsl:value-of select='concat("{SupplMeshName: ", text(), "||UI: ", @UI, "||Type: ", @Type, "}")'/>
       </xsl:for-each>
     </xsl:element>
   </xsl:template>
