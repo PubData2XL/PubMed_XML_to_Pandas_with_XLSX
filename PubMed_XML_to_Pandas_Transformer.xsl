@@ -181,16 +181,6 @@
   </xsl:template>
   <!-- End of MedlineCitation/Article -->
 
-  <!-- <MeshHeadingList>
-        <MeshHeading>
-          <DescriptorName UI="D000067877" MajorTopicYN="Y">Autism Spectrum Disorder</DescriptorName>
-          <QualifierName UI="Q000175" MajorTopicYN="N">diagnosis</QualifierName>
-          <QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName>
-        </MeshHeading>
-        <MeshHeading>
-          <DescriptorName UI="D001321" MajorTopicYN="Y">Autistic Disorder</DescriptorName>
-        </MeshHeading> -->
-
   <xsl:template match="MeshHeadingList">
     <xsl:element name="MeshHeadingList">
       <xsl:for-each select="MeshHeading">
