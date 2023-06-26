@@ -1,0 +1,983 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet
+  PUBLIC '-//NLM//DTD PubMedArticle, 1st January 2019//EN'
+  'https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd'>
+<PubmedArticleSet>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" IndexingMethod="Automated" Owner="NLM">
+      <PMID Version="1">33387232</PMID>
+      <DateCompleted>
+        <Year>2021</Year>
+        <Month>Sep</Month>
+        <Day>27</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2021</Year>
+        <Month>10</Month>
+      </DateRevised>
+      <Article PubModel="Print-Electronic">
+        <Journal>
+          <ISSN IssnType="Electronic">1573-3432</ISSN>
+          <JournalIssue CitedMedium="Internet">
+            <Volume>51</Volume>
+            <Issue>10</Issue>
+            <PubDate>
+              <Year>2021</Year>
+              <Season>Autumn</Season>
+            </PubDate>
+          </JournalIssue>
+          <Title>Journal of autism and developmental disorders</Title>
+          <ISOAbbreviation>J Autism Dev Disord</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>A Distinct Three-Factor Structure of Restricted and Repetitive Behaviors in an Epidemiologically Sound Sample of Preschool-Age Children with Autism Spectrum Disorder.</ArticleTitle>
+        <VernacularTitle><sup>¿</sup>Cómo <u>hablo</u> con mi <i>familia</i> sobre <b>Gaucher</b><sub>?</sub></VernacularTitle>
+        <Pagination>
+          <MedlinePgn>3456-3468</MedlinePgn>
+        </Pagination>
+        <ELocationID EIdType="doi" ValidYN="Y">10.1007/s10803-020-04776-x</ELocationID>
+        <Abstract>
+            <AbstractText Label="HEADER 1">Some Text for Header 1</AbstractText>
+            <AbstractText Label="HEADER 2">Some Text for Header 2</AbstractText>
+            <AbstractText Label="HEADER 3">Some Text for Header 3</AbstractText>
+            <CopyrightInformation>Copyright © 1993-2017, University of</CopyrightInformation>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Hiruma</LastName>
+            <ForeName>Laura</ForeName>
+            <Initials>L</Initials>
+            <Identifier Source="ORCID">http://orcid.org/0000-0003-4192-4376</Identifier>
+            <AffiliationInfo>
+              <Affiliation>test1</Affiliation>
+            </AffiliationInfo>
+            <AffiliationInfo>
+              <Affiliation>test2</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Pretzel</LastName>
+            <ForeName>Rebecca Edmondson</ForeName>
+            <Initials>RE</Initials>
+            <AffiliationInfo>
+              <Affiliation>Carolina Institute for Developmental Disabilities, University of North Carolina at Chapel Hill, Campus Box #7255, Chapel Hill, NC, 27599-7255, USA.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Tapia</LastName>
+            <ForeName>Amanda</ForeName>
+            <Initials>A</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Biostatistics, Collaborative Studies Coordinating Center, University of North Carolina at Chapel Hill, Campus Box #8030, Chapel Hill, NC, 27516, USA.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <GrantList CompleteYN="Y">
+          <Grant>
+            <GrantID>U10 DD000180</GrantID>
+            <Acronym>DD</Acronym>
+            <Agency>NCBDD CDC HHS</Agency>
+            <Country>United States</Country>
+          </Grant>
+          <Grant>
+            <GrantID>CC999999</GrantID>
+            <Acronym>ImCDC</Acronym>
+            <Agency>Intramural CDC HHS</Agency>
+            <Country>United States</Country>
+          </Grant>
+          <Grant>
+            <GrantID>U10 DD000183</GrantID>
+            <Acronym>DD</Acronym>
+            <Agency>NCBDD CDC HHS</Agency>
+            <Country>United States</Country>
+          </Grant>
+        </GrantList>
+        <PublicationTypeList>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+        </PublicationTypeList>
+        <ArticleDate DateType="Electronic">
+          <Year>2021</Year>
+          <Month>01</Month>
+          <Day>02</Day>
+        </ArticleDate>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>United States</Country>
+        <MedlineTA>J Autism Dev Disord</MedlineTA>
+        <NlmUniqueID>7904301</NlmUniqueID>
+        <ISSNLinking>0162-3257</ISSNLinking>
+      </MedlineJournalInfo>
+      <CitationSubset>IM</CitationSubset>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D000067877" MajorTopicYN="Y">Autism Spectrum Disorder</DescriptorName>
+          <QualifierName UI="Q000175" MajorTopicYN="N">diagnosis</QualifierName>
+          <QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D001321" MajorTopicYN="Y">Autistic Disorder</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+        </MeshHeading>
+      </MeshHeadingList>
+      <SupplMeshList>
+        <SupplMeshName Type="Protocol" UI="C040721">ABDIC protocol</SupplMeshName>
+        <SupplMeshName Type="Protocol" UI="C034632">ABVD protocol</SupplMeshName>
+        <SupplMeshName Type="Protocol" UI="C034078">CVPP protocol</SupplMeshName>
+        <SupplMeshName Type="Protocol" UI="C014553">MOPP protocol</SupplMeshName>
+      </SupplMeshList>
+      <KeywordList Owner="NOTNLM">
+        <Keyword MajorTopicYN="Y">Autism spectrum disorder (ASD)</Keyword>
+        <Keyword MajorTopicYN="N">Exploratory factor analysis</Keyword>
+        <Keyword MajorTopicYN="Y">Preschool children</Keyword>
+        <Keyword MajorTopicYN="N">Restricted and repetitive behaviors (RRB)</Keyword>
+      </KeywordList>
+      <OtherAbstract Type="Publisher" Language="spa">
+        <AbstractText>Se ha estudiado el efecto de la cocción en agua sobre la capacidad antioxidante y calidad sensorial de coliflor que previamente ha sido cortada, envasada en atmósfera modificada (5,7-2,3% de CO<sub>2</sub> y 17,6-19,7% de O 2 ) y almacenada a 5 oC durante 13 días, comparándola con la coliflor recién recolectada. Se ha observado un aumento de ácido ascórbico (18%), <i>polifenoles (74%)</i> y actividad antioxidante (21%) en la coliflor almacenada cruda.</AbstractText>
+      </OtherAbstract>
+      <NumberOfReferences>38</NumberOfReferences>
+      <OtherID Source="NASA">00022554</OtherID>
+      <SpaceFlightMission>Flight Experiment</SpaceFlightMission>
+      <SpaceFlightMission>STS-55 Shuttle Project</SpaceFlightMission>
+      <SpaceFlightMission>manned</SpaceFlightMission>
+      <SpaceFlightMission>short duration</SpaceFlightMission>
+      <GeneralNote Owner="KIE">38 refs.</GeneralNote>
+      <ChemicalList>
+        <Chemical>
+            <RegistryNumber>QJA9M5H4IM</RegistryNumber>
+            <NameOfSubstance UI="D001280">Atrazine</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+            <RegistryNumber>TE7660XO1C</RegistryNumber>
+            <NameOfSubstance UI="D005998">Glycine</NameOfSubstance>
+        </Chemical>
+      </ChemicalList>
+      <InvestigatorList>
+        <Investigator>
+          <LastName>Carlsson</LastName>
+          <ForeName>Christer</ForeName>
+          <Initials>C</Initials>
+          <Identifier Source="ORCID">http://orcid.org/0000-0003-4192-4376</Identifier>
+          <AffiliationInfo>
+            <Affiliation>test1</Affiliation>
+          </AffiliationInfo>
+          <AffiliationInfo>
+            <Affiliation>test2</Affiliation>
+          </AffiliationInfo>
+        </Investigator>
+        <Investigator>
+          <LastName>Cecchi</LastName>
+          <ForeName>Francesca</ForeName>
+          <Initials>F</Initials>
+        </Investigator>
+      </InvestigatorList>
+      <CommentsCorrectionsList>
+        <CommentsCorrections RefType="CommentOn">
+          <RefSource>J Bone Miner Res. 2015 Sep;30(9):1745</RefSource>
+          <PMID Version="1">26281008</PMID>
+        </CommentsCorrections>
+        <CommentsCorrections RefType="RetractionOf">
+          <RefSource>Sato Y, Iwamoto J, Kanoko T, Satoh K. J Bone Miner Res. 2005 Aug;20(8):1327-33</RefSource>
+          <PMID Version="1">16007329</PMID>
+        </CommentsCorrections>
+      </CommentsCorrectionsList>
+      <GeneSymbolList>
+        <GeneSymbol>pyrB</GeneSymbol>
+        <GeneSymbol>Ghox-lab</GeneSymbol>
+        <GeneSymbol>pulC</GeneSymbol>
+      </GeneSymbolList>
+      <PersonalNameSubjectList>
+        <PersonalNameSubject>
+          <LastName>Darwin</LastName>
+          <ForeName>Charles</ForeName>
+          <Initials>C</Initials>
+        </PersonalNameSubject>
+        <PersonalNameSubject>
+          <LastName>Hume</LastName>
+          <ForeName>David</ForeName>
+          <Initials>D</Initials>
+        </PersonalNameSubject>
+        <PersonalNameSubject>
+          <LastName>Morgan</LastName>
+          <ForeName>C Lloyd</ForeName>
+          <Initials>CL</Initials>
+        </PersonalNameSubject>
+      </PersonalNameSubjectList>
+      <CoiStatement>The authors declare that there is no conflict of interests regarding the publication of this paper.</CoiStatement>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="accepted">
+          <Year>2020</Year>
+          <Month>10</Month>
+          <Day>29</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2021</Year>
+          <Month>1</Month>
+          <Day>3</Day>
+          <Hour>6</Hour>
+          <Minute>8</Minute>
+          <Second>56</Second>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2021</Year>
+          <Month>9</Month>
+          <Day>28</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2021</Year>
+          <Month>1</Month>
+          <Day>2</Day>
+          <Hour>12</Hour>
+          <Minute>10</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">33387232</ArticleId>
+        <ArticleId IdType="doi">10.1007/s10803-020-04776-x</ArticleId>
+        <ArticleId IdType="pii">10.1007/s10803-020-04776-x</ArticleId>
+        <ArticleId IdType="pmc">PMC8249473</ArticleId>
+        <ArticleId IdType="mid">NIHMS1705367</ArticleId>
+      </ArticleIdList>
+      <ReferenceList>
+        <Reference>
+          <Citation>Neville-Towle J, Sakals S. Urinary bladder herniation through a caudoventral abdominal wall defect in a mature cat. Can. Vet. J. 2015;56:934–936.</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pmc">PMC4535508</ArticleId>
+            <ArticleId IdType="pubmed">26347198</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Am Acad Child Adolesc Psychiatry. 2014 Nov;53(11):1216-24</Citation>
+        </Reference>
+        <Reference>
+          <Citation>Eur Child Adolesc Psychiatry. 2009 Nov;18(11):675-82</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">19452196</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Child Psychiatry Hum Dev. 2003 Fall;34(1):3-17</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">14518620</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2013 Jun;43(6):1287-97</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">23065116</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Child Psychol Psychiatry. 2007 Nov;48(11):1131-8</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17995489</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2007 Jul;37(6):1107-15</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17072748</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Autism Res. 2019 Sep;12(9):1399-1410</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">31246379</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2010 Jul;40(7):903-6</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">20108116</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Child Psychol Psychiatry. 2014 Aug;55(8):945-53</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">24552513</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2012 Oct;42(10):2121-40</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">22350336</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Psychol Bull. 2011 Jul;137(4):562-93</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">21574682</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2015 May;45(5):1271-80</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">25348175</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Autism. 2004 Mar;8(1):61-87</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">15070548</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2014 May;44(5):1207-19</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">24234675</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2010 Dec;40(12):1521-30</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">20405194</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2012 Jan;42(1):82-93</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">21384244</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Am J Ment Retard. 2007 Jul;112(4):233-45</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17559291</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Neurodev Disord. 2011 Dec;3(4):316-24</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">21881965</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Am J Ment Retard. 2006 May;111(3):199-215</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">16597187</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Pediatr. 2004 Sep;145(3):391-5</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">15343197</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Dev Psychopathol. 2010 Winter;22(1):55-69</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">20102647</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Child Neuropsychol. 2006 Aug;12(4-5):247-67</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">16911971</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2005 Apr;35(2):145-58</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">15909401</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2009 May;39(5):765-74</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">19148740</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2007 Jan;37(1):73-85</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17195920</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Autism Res. 2013 Feb;6(1):33-41</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">23258569</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Autism Res. 2013 Dec;6(6):584-95</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">23868881</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2007 May;37(5):855-66</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17048092</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Autism. 2008 Sep;12(5):457-72</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">18805942</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Child Psychol Psychiatry. 2008 Nov;49(11):1193-200</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">19017031</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Dev Neurorehabil. 2009 Jun;12(3):122-7</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">19466619</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2000 Jun;30(3):237-43</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">11055459</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2008 Sep;38(8):1439-50</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">16900401</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Autism. 2007 Mar;11(2):161-71</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17353216</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Child Psychol Psychiatry. 2006 Jun;47(6):582-90</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">16712635</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2008 Sep;38(8):1518-33</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">18266099</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2009 Jul;39(7):1087-91</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">19283461</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Autism Dev Disord. 2008 Apr;38(4):657-67</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17690967</ArticleId>
+          </ArticleIdList>
+        </Reference>
+      </ReferenceList>
+      <ObjectList>
+        <Object>
+          <Param>This is an additional data field to store other data.</Param>
+        </Object>
+      </ObjectList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedBookArticle>
+    <BookDocument>
+      <PMID Version="1">34460185</PMID>
+      <ArticleIdList>
+        <ArticleId IdType="bookaccession">NBK573263</ArticleId>
+        <ArticleId IdType="doi">10.17226/26295</ArticleId>
+      </ArticleIdList>
+      <Book>
+        <Publisher>
+          <PublisherName>National Academies Press (US)</PublisherName>
+          <PublisherLocation>Washington (DC)</PublisherLocation>
+        </Publisher>
+        <BookTitle book="nap26295">Implications for Behavioral and Social Research of Preclinical Markers of Alzheimer’s Disease and Related Dementias: Proceedings of a Workshop—in Brief</BookTitle>
+        <PubDate>
+          <Year>2021</Year>
+          <Month>08</Month>
+          <Day>24</Day>
+        </PubDate>
+        <BeginningDate>
+            <Year>2021</Year>
+            <Season>Summer</Season>
+        </BeginningDate>
+        <EndingDate>
+            <Year>2022</Year>
+            <Season>Spring</Season>
+        </EndingDate>
+        <AuthorList Type="authors">
+          <Author>
+            <CollectiveName>National Academies of Sciences, Engineering, and Medicine; Division of Behavioral and Social Sciences and Education; Board on Behavioral, Cognitive, and Sensory Sciences</CollectiveName>
+          </Author>
+        </AuthorList>
+        <AuthorList Type="editors">
+          <Author>
+            <LastName>Forstag</LastName>
+            <ForeName>Erin Hammers</ForeName>
+            <Initials>EH</Initials>
+          </Author>
+        </AuthorList>
+        <InvestigatorList>
+          <Investigator>
+            <LastName>Carlsson</LastName>
+            <ForeName>Christer</ForeName>
+            <Initials>C</Initials>
+          </Investigator>
+          <Investigator>
+            <LastName>Cecchi</LastName>
+            <ForeName>Francesca</ForeName>
+            <Initials>F</Initials>
+          </Investigator>
+        </InvestigatorList>
+        <CollectionTitle book="napcollect">The National Academies Collection: Reports funded by National Institutes of Health</CollectionTitle>
+        <Isbn>0309092752</Isbn>
+        <ELocationID EIdType="doi">10.17226/26295</ELocationID>
+      </Book>
+      <Language>eng</Language>
+      <PublicationType UI="D016454">Review</PublicationType>
+      <Abstract>
+        <AbstractText>On June 28-29, 2021, the National Academies of Sciences, Engineering, and Medicine held a virtual workshop, “Behavioral and Social Research and Clinical Practice Implications of Biomarkers and Other Preclinical Diagnostics of Alzheimer’s Disease (AD) and AD-Related Dementias” (AD/ADRD). The workshop was sponsored by the National Institute on Aging with the primary objective to engage in meaningful discussions about the implications of biomarkers and other preclinical diagnostics of AD and ADRD and to generate ideas for future research that might be of interest to the NIA. This publication summarizes the presentation and discussion of the workshop.</AbstractText>
+        <CopyrightInformation>Copyright 2021 by the National Academy of Sciences. All rights reserved.</CopyrightInformation>
+      </Abstract>
+    </BookDocument>
+    <PubmedBookData>
+      <History>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2021</Year>
+          <Month>8</Month>
+          <Day>31</Day>
+          <Hour>6</Hour>
+          <Minute>1</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2021</Year>
+          <Month>8</Month>
+          <Day>31</Day>
+          <Hour>6</Hour>
+          <Minute>1</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2021</Year>
+          <Month>8</Month>
+          <Day>31</Day>
+          <Hour>6</Hour>
+          <Minute>1</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">34460185</ArticleId>
+      </ArticleIdList>
+    </PubmedBookData>
+  </PubmedBookArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+      <PMID Version="1">33388160</PMID>
+      <DateCompleted>
+        <Year>2021</Year>
+        <Month>10</Month>
+        <Day>12</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2021</Year>
+        <Month>10</Month>
+        <Day>12</Day>
+      </DateRevised>
+      <Article PubModel="Print-Electronic">
+        <Journal>
+          <ISSN IssnType="Electronic">1549-4713</ISSN>
+          <JournalIssue CitedMedium="Internet">
+            <Volume>128</Volume>
+            <Issue>6</Issue>
+            <PubDate>
+              <Year>2021</Year>
+              <Month>06</Month>
+            </PubDate>
+          </JournalIssue>
+          <Title>Ophthalmology</Title>
+          <ISOAbbreviation>Ophthalmology</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>Reducing the Global Burden of Myopia by Delaying the Onset of Myopia and Reducing Myopic Progression in Children: The Academy's Task Force on Myopia.</ArticleTitle>
+        <Pagination>
+          <StartPage>816</StartPage>
+          <EndPage>826</EndPage>
+        </Pagination>
+        <ELocationID EIdType="pii" ValidYN="Y">S0161-6420(20)31043-5</ELocationID>
+        <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.ophtha.2020.10.040</ELocationID>
+        <Abstract>
+          <AbstractText>In 2019, the American Academy of Ophthalmology (AAO) created the Task Force on Myopia in recognition of the substantial global increases in myopia prevalence and its associated complications. The Task Force, led by Richard L. Abbott, MD, and Donald Tan, MD, comprised recognized experts in myopia prevention and treatment, public health experts from around the world, and organization representatives from the American Academy of Family Physicians, American Academy of Optometry, and American Academy of Pediatrics. The Academy's Board of Trustees believes that myopia is a high-priority cause of visual impairment, warranting a timely evaluation and synthesis of the scientific literature and formulation of an action plan to address the issue from different perspectives. This includes education of physicians and other health care providers, patients and their families, schools, and local and national public health agencies; defining health policies to ameliorate patients' access to appropriate therapy and to promote effective public health interventions; and fostering promising avenues of research.</AbstractText>
+          <CopyrightInformation>Copyright © 2020 American Academy of Ophthalmology. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Modjtahedi</LastName>
+            <ForeName>Bobeck S</ForeName>
+            <Initials>BS</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Ophthalmology, Southern California Kaiser Permanente, Baldwin Park, California; Department of Research and Evaluation, Southern California Permanente Medical Group, Pasadena, California.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Abbott</LastName>
+            <ForeName>Richard L</ForeName>
+            <Initials>RL</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Ophthalmology, University of California, San Francisco, San Francisco, California.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Fong</LastName>
+            <ForeName>Donald S</ForeName>
+            <Initials>DS</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Ophthalmology, Southern California Kaiser Permanente, Baldwin Park, California; Department of Research and Evaluation, Southern California Permanente Medical Group, Pasadena, California.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Lum</LastName>
+            <ForeName>Flora</ForeName>
+            <Initials>F</Initials>
+            <AffiliationInfo>
+              <Affiliation>American Academy of Ophthalmology, San Francisco, California. Electronic address: flum@aao.org.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Tan</LastName>
+            <ForeName>Donald</ForeName>
+            <Initials>D</Initials>
+            <AffiliationInfo>
+              <Affiliation>Eye and Retina Surgeons, Singapore, Republic of Singapore.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <CollectiveName>Task Force on Myopia</CollectiveName>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <PublicationTypeList>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+          <PublicationType UI="D016454">Review</PublicationType>
+        </PublicationTypeList>
+        <ArticleDate DateType="Electronic">
+          <Year>2020</Year>
+          <Month>12</Month>
+          <Day>30</Day>
+        </ArticleDate>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>United States</Country>
+        <MedlineTA>Ophthalmology</MedlineTA>
+        <NlmUniqueID>7802443</NlmUniqueID>
+        <ISSNLinking>0161-6420</ISSNLinking>
+      </MedlineJournalInfo>
+      <CitationSubset>IM</CitationSubset>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D000047" MajorTopicYN="Y">Academies and Institutes</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D026683" MajorTopicYN="Y">Advisory Committees</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D006291" MajorTopicYN="Y">Health Policy</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D009216" MajorTopicYN="N">Myopia</DescriptorName>
+          <QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName>
+          <QualifierName UI="Q000517" MajorTopicYN="Y">prevention &amp; control</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D009885" MajorTopicYN="Y">Ophthalmology</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D009907" MajorTopicYN="N">Optometry</DescriptorName>
+          <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D011634" MajorTopicYN="Y">Public Health</DescriptorName>
+        </MeshHeading>
+      </MeshHeadingList>
+      <KeywordList Owner="NOTNLM">
+        <Keyword MajorTopicYN="Y">myopia</Keyword>
+        <Keyword MajorTopicYN="Y">orthokeratology</Keyword>
+        <Keyword MajorTopicYN="Y">public health</Keyword>
+        <Keyword MajorTopicYN="Y">visual impairment</Keyword>
+      </KeywordList>
+      <InvestigatorList>
+        <Investigator ValidYN="Y">
+          <LastName>Ang</LastName>
+          <ForeName>Marcus</ForeName>
+          <Initials>M</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Chiarito</LastName>
+          <ForeName>Susan</ForeName>
+          <Initials>S</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Cotter</LastName>
+          <ForeName>Susan A</ForeName>
+          <Initials>SA</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Fernandez</LastName>
+          <ForeName>Angela Maria</ForeName>
+          <Initials>AM</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Grzybowski</LastName>
+          <ForeName>Andrzej</ForeName>
+          <Initials>A</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>He</LastName>
+          <ForeName>Mingguang</ForeName>
+          <Initials>M</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Jacobs</LastName>
+          <ForeName>Deborah S</ForeName>
+          <Initials>DS</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Jonas</LastName>
+          <ForeName>Jost B</ForeName>
+          <Initials>JB</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Kemper</LastName>
+          <ForeName>Alex</ForeName>
+          <Initials>A</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Lee</LastName>
+          <ForeName>Katherine A</ForeName>
+          <Initials>KA</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Molinari</LastName>
+          <ForeName>Andrea Delia</ForeName>
+          <Initials>AD</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Morgan</LastName>
+          <ForeName>Ian</ForeName>
+          <Initials>I</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Ohno-Matsui</LastName>
+          <ForeName>Kyoko</ForeName>
+          <Initials>K</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Repka</LastName>
+          <ForeName>Michael X</ForeName>
+          <Initials>MX</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Salim</LastName>
+          <ForeName>Sarwat</ForeName>
+          <Initials>S</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Wu</LastName>
+          <ForeName>Pei-Chang</ForeName>
+          <Initials>PC</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Yao</LastName>
+          <ForeName>Ke</ForeName>
+          <Initials>K</Initials>
+        </Investigator>
+        <Investigator ValidYN="Y">
+          <LastName>Zadnik</LastName>
+          <ForeName>Karla</ForeName>
+          <Initials>K</Initials>
+        </Investigator>
+      </InvestigatorList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="received">
+          <Year>2020</Year>
+          <Month>10</Month>
+          <Day>19</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="revised">
+          <Year>2020</Year>
+          <Month>10</Month>
+          <Day>27</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="accepted">
+          <Year>2020</Year>
+          <Month>10</Month>
+          <Day>29</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2021</Year>
+          <Month>1</Month>
+          <Day>4</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2021</Year>
+          <Month>10</Month>
+          <Day>13</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2021</Year>
+          <Month>1</Month>
+          <Day>3</Day>
+          <Hour>20</Hour>
+          <Minute>25</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">33388160</ArticleId>
+        <ArticleId IdType="pii">S0161-6420(20)31043-5</ArticleId>
+        <ArticleId IdType="doi">10.1016/j.ophtha.2020.10.040</ArticleId>
+      </ArticleIdList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedBookArticle>
+    <BookDocument>
+      <PMID Version="1">34473443</PMID>
+      <ArticleIdList>
+        <ArticleId IdType="bookaccession">NBK573429</ArticleId>
+        <ArticleId IdType="doi">10.36255/exonpublications.amyotrophiclateralsclerosis.axonaltransport.2021</ArticleId>
+      </ArticleIdList>
+      <Book>
+        <Publisher>
+          <PublisherName>Exon Publications</PublisherName>
+          <PublisherLocation>Brisbane (AU)</PublisherLocation>
+        </Publisher>
+        <BookTitle book="cod9780645001778">Amyotrophic Lateral Sclerosis</BookTitle>
+        <PubDate>
+          <Year>2021</Year>
+          <Month>07</Month>
+          <Day>25</Day>
+        </PubDate>
+        <AuthorList Type="editors">
+          <Author>
+            <LastName>Araki</LastName>
+            <ForeName>Toshiyuki</ForeName>
+            <Initials>T</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Peripheral Nervous System Research, National Institute of Neuroscience, National Center of Neurology and Psychiatry, Japan</Affiliation>
+            </AffiliationInfo>
+          </Author>
+        </AuthorList>
+        <Edition>2nd</Edition>
+        <CollectionTitle book="nicepmg">NICE Process and Methods Guides</CollectionTitle>
+        <Isbn>9780645001778</Isbn>
+        <ELocationID EIdType="doi">10.36255/exonpublications.amyotrophiclateralsclerosis.2021</ELocationID>
+        <Medium>Internet</Medium>
+        <ReportNumber>Process and Methods Guides No. 12</ReportNumber>
+      </Book>
+      <LocationLabel Type="chapter">Chapter 5</LocationLabel>
+      <ArticleTitle book="cod9780645001778" part="Ch5">Axonal Transport and Local Translation of mRNA in Amyotrophic Lateral Sclerosis</ArticleTitle>
+      <Language>eng</Language>
+      <AuthorList Type="authors">
+        <Author>
+          <LastName>Nagano</LastName>
+          <ForeName>Seiichi</ForeName>
+          <Initials>S</Initials>
+          <AffiliationInfo>
+            <Affiliation>Department of Neurotherapeutics, Osaka University Graduate School of Medicine, Japan</Affiliation>
+          </AffiliationInfo>
+          <AffiliationInfo>
+            <Affiliation>Department of Peripheral Nervous System Research, National Institute of Neuroscience, National Center of Neurology and Psychiatry, Japan</Affiliation>
+          </AffiliationInfo>
+        </Author>
+        <Author>
+          <LastName>Araki</LastName>
+          <ForeName>Toshiyuki</ForeName>
+          <Initials>T</Initials>
+          <AffiliationInfo>
+            <Affiliation>Department of Peripheral Nervous System Research, National Institute of Neuroscience, National Center of Neurology and Psychiatry, Japan</Affiliation>
+          </AffiliationInfo>
+        </Author>
+      </AuthorList>
+      <PublicationType UI="D016454">Review</PublicationType>
+      <Abstract>
+        <AbstractText>Since neurons have long neurites, especially axons, the transport of essential mRNAs, and their translation locally in axons, are essential to maintain the shape and function of the neurons. The RNA-binding protein TDP-43 (transactive response DNA binding protein 43) plays a crucial role in the transport and translation of mRNAs in neurons. In amyotrophic lateral sclerosis (ALS) and frontotemporal lobar degeneration (FTLD), TDP-43 and other RNA-binding proteins are mis-localized and abnormally deposited in neurons. Mutations of genes regulating these proteins have been identified in clinical cases. Impaired mRNA transport system may be a contributing factor of neurodegeneration in ALS/FTLD. In this chapter, we outline the role of RNA-binding proteins, with emphasis on TDP-43, in axonal transport and local translation of mRNAs in ALS/FTLD.</AbstractText>
+        <CopyrightInformation>Copyright: The Authors.</CopyrightInformation>
+      </Abstract>
+      <Sections>
+        <Section>
+          <SectionTitle book="cod9780645001778" part="Ch5" sec="Ch5-sec1">INTRODUCTION</SectionTitle>
+        </Section>
+        <Section>
+          <SectionTitle book="cod9780645001778" part="Ch5" sec="Ch5-sec2">FUNCTION OF RNA-BINDING PROTEINS</SectionTitle>
+        </Section>
+        <Section>
+          <SectionTitle book="cod9780645001778" part="Ch5" sec="Ch5-sec3">PATHOLOGICAL ROLE OF RNA GRANULES</SectionTitle>
+        </Section>
+        <Section>
+          <SectionTitle book="cod9780645001778" part="Ch5" sec="Ch5-sec4">RIBOSOMAL PROTEIN mRNAS AS AXONAL TRANSPORT TARGETS</SectionTitle>
+        </Section>
+        <Section>
+          <SectionTitle book="cod9780645001778" part="Ch5" sec="Ch5-sec5">LOCAL TRANSLATION IN AXONS IN PHYSIOLOGICAL CONDITIONS AND ALS PATHOGENESIS</SectionTitle>
+        </Section>
+        <Section>
+          <SectionTitle book="cod9780645001778" part="Ch5" sec="Ch5-sec6">CONCLUSION</SectionTitle>
+        </Section>
+        <Section>
+          <SectionTitle book="cod9780645001778" part="Ch5" sec="Ch5-references">REFERENCES</SectionTitle>
+        </Section>
+      </Sections>
+      <KeywordList>
+        <Keyword>amyotrophic lateral sclerosis</Keyword>
+        <Keyword>axonal transport</Keyword>
+        <Keyword>local translation</Keyword>
+        <Keyword>ribosomal protein</Keyword>
+        <Keyword>TDP-43</Keyword>
+      </KeywordList>
+    </BookDocument>
+    <PubmedBookData>
+      <History>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2021</Year>
+          <Month>9</Month>
+          <Day>3</Day>
+          <Hour>6</Hour>
+          <Minute>1</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2021</Year>
+          <Month>9</Month>
+          <Day>3</Day>
+          <Hour>6</Hour>
+          <Minute>1</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2021</Year>
+          <Month>9</Month>
+          <Day>3</Day>
+          <Hour>6</Hour>
+          <Minute>1</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">34473443</ArticleId>
+      </ArticleIdList>
+    </PubmedBookData>
+  </PubmedBookArticle>
+</PubmedArticleSet>
