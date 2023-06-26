@@ -70,6 +70,7 @@
     </xsl:element>
     <xsl:apply-templates select="MeshHeadingList"/>
     <xsl:apply-templates select="SupplMeshList"/>
+    <xsl:apply-templates select="KeywordList"/>
   </xsl:template>
 
   <!-- MedlineCitation/Article -->
@@ -202,6 +203,18 @@
     </xsl:element>
   </xsl:template>
   
+  <xsl:template match="KeywordList">
+    <xsl:element name="KeywordList">
+      <xsl:attribute name="Owner">
+        <xsl:value-of select="@Owner"/>
+      </xsl:attribute>
+      <xsl:for-each select="Keyword">
+        <xsl:if test="position() != 1">, </xsl:if>
+        <xsl:value-of select='concat("{Keyword: ", text(), "||MajorTopicYN: ", @MajorTopicYN, "}")'/>
+      </xsl:for-each>
+    </xsl:element>
+  </xsl:template>
+
   <xsl:template match="PubmedData">
     <xsl:element name="History">
         <xsl:value-of select="@val"/>
