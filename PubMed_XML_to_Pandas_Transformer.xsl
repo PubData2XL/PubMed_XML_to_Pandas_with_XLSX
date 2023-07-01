@@ -51,42 +51,27 @@
     <xsl:apply-templates select="DateCompleted"/>
     <xsl:apply-templates select="DateRevised"/>
     <xsl:apply-templates select="Article"/>
-    <xsl:element name="Journal_Country">
-      <xsl:value-of select='MedlineJournalInfo/Country'/>
-    </xsl:element>
-    <xsl:copy-of select='MedlineJournalInfo/MedlineTA'/>
-    <xsl:copy-of select='MedlineJournalInfo/NlmUniqueID'/>
-    <xsl:copy-of select='MedlineJournalInfo/ISSNLinking'/>
-    <xsl:copy-of select='CitationSubset'/>
-    <xsl:apply-templates select="MeshHeadingList"/>
+    <xsl:apply-templates select="MedlineJournalInfo"/>
+    <xsl:apply-templates select="ChemicalList"/>
     <xsl:apply-templates select="SupplMeshList"/>
-    <xsl:apply-templates select="KeywordList"/>
-    <xsl:apply-templates select="OtherAbstract"/>
+    <xsl:copy-of select='CitationSubset'/>
+    <xsl:apply-templates select="CommentsCorrectionsList"/>
+    <xsl:apply-templates select="GeneSymbolList"/>
+    <xsl:apply-templates select="MeshHeadingList"/>
     <xsl:copy-of select="NumberOfReferences"/>
+    <xsl:apply-templates select="PersonalNameSubjectList"/>
     <xsl:apply-templates select="OtherID"/>
+    <xsl:apply-templates select="OtherAbstract"/>
+    <xsl:apply-templates select="KeywordList"/>    
+    <xsl:copy-of select='CoiStatement'/>
     <xsl:element name="SpaceFlightMission">
       <xsl:for-each select="SpaceFlightMission">
         <xsl:if test="position() != 1">||</xsl:if>
         <xsl:value-of select='concat("{SpaceFlightMission: ", text(),"}")'/>
       </xsl:for-each>
     </xsl:element>
-    <xsl:apply-templates select="SpaceFlightMission"/>
-    <xsl:apply-templates select="GeneralNote"/>
-    <xsl:apply-templates select="ChemicalList"/>
     <xsl:apply-templates select="InvestigatorList"/>
-    <xsl:apply-templates select="CommentsCorrectionsList"/>
-    <xsl:apply-templates select="GeneSymbolList"/>
-    <xsl:apply-templates select="PersonalNameSubjectList"/>
-    <xsl:copy-of select='CoiStatement'/>
-  </xsl:template>
-
-  <xsl:template match="GeneSymbolList">
-    <xsl:element name="{name(.)}">
-      <xsl:for-each select="GeneSymbol">
-        <xsl:if test="position() != 1">||</xsl:if>
-        <xsl:value-of select='concat("{GeneSymbol: ", text(),"}")'/>
-      </xsl:for-each>
-    </xsl:element>
+    <xsl:apply-templates select="GeneralNote"/>
   </xsl:template>
 
   <xsl:template match="Article">
@@ -106,6 +91,15 @@
     <xsl:apply-templates select="GrantList"/> 
     <xsl:apply-templates select="PublicationTypeList"/>
     <xsl:apply-templates select="ArticleDate"/>
+  </xsl:template>
+
+  <xsl:template match="MedlineJournalInfo">
+    <xsl:element name="Journal_Country">
+      <xsl:value-of select='Country'/>
+    </xsl:element>
+    <xsl:copy-of select='MedlineTA'/>
+    <xsl:copy-of select='NlmUniqueID'/>
+    <xsl:copy-of select='ISSNLinking'/>
   </xsl:template>
 
   <xsl:template match="Pagination">
@@ -253,6 +247,15 @@
       <xsl:for-each select="CommentsCorrections">
         <xsl:if test="position() != 1">, </xsl:if>
         <xsl:value-of select='concat("{RefType: ", @RefType, "||PMID: ", PMID, "||RefSource: ", RefSource/text(), "}")'/> 
+      </xsl:for-each>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="GeneSymbolList">
+    <xsl:element name="{name(.)}">
+      <xsl:for-each select="GeneSymbol">
+        <xsl:if test="position() != 1">||</xsl:if>
+        <xsl:value-of select='concat("{GeneSymbol: ", text(),"}")'/>
       </xsl:for-each>
     </xsl:element>
   </xsl:template>
