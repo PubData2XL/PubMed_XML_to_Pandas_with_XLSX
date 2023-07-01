@@ -72,64 +72,54 @@
       <xsl:value-of select="@PubModel"/>
     </xsl:element>
     <xsl:apply-templates select="Journal"/>
-    <xsl:element name="ArticleTitle">
-      <xsl:value-of select='ArticleTitle'/>
-    </xsl:element>
-    <xsl:element name="VernacularTitle">
-      <xsl:value-of select='VernacularTitle'/>
-    </xsl:element>
-    <xsl:element name="Pagination">
-      <xsl:choose>
-        <xsl:when test="Pagination/MedlinePgn != ''">
-          <xsl:value-of select="Pagination/MedlinePgn"/>
-        </xsl:when>
-        <xsl:otherwise>
-        <xsl:choose>
-          <xsl:when test="Pagination/StartPage != ''">
-            <xsl:value-of select="Pagination/StartPage"/>
-            <xsl:if test="Pagination/StartPage != ''">
-              <xsl:value-of select="concat('-', Pagination/EndPage)"/>
-            </xsl:if>
-          </xsl:when>
-        </xsl:choose>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:element>
+    <xsl:copy-of select='ArticleTitle'/>
+    <xsl:copy-of select='VernacularTitle'/>
+    <xsl:apply-templates select="Pagination"/>
     <xsl:element name="ELocationID">
-      <xsl:value-of select='concat(ELocationID/@EIdType,": ",ELocationID)'/>
+      <xsl:value-of select='concat("{", ELocationID/@EIdType,": ",ELocationID, "}")'/>
     </xsl:element>
     <xsl:apply-templates select="Abstract"/>
     <xsl:apply-templates select="AuthorList"/> 
-    <xsl:element name="Language">
-      <xsl:value-of select="Language"/>
-    </xsl:element>
+    <xsl:copy-of select="Language"/>
     <xsl:apply-templates select="GrantList"/> 
     <xsl:apply-templates select="PublicationTypeList"/>
     <xsl:apply-templates select="ArticleDate"/>
   </xsl:template>
 
+  <xsl:template match="Pagination">
+    <xsl:element name="Pagination">
+      <xsl:choose>
+        <xsl:when test="MedlinePgn != ''">
+          <xsl:value-of select="MedlinePgn"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:choose>
+            <xsl:when test="StartPage != ''">
+              <xsl:value-of select="StartPage"/>
+              <xsl:if test="EndPage != ''">
+                <xsl:value-of select="concat('-', EndPage)"/>
+              </xsl:if>
+            </xsl:when>
+          </xsl:choose>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:element>
+  </xsl:template>
+  
   <xsl:template match="Journal">
     <xsl:element name="JournalTitle"><xsl:value-of select="Title"/></xsl:element>
-    <xsl:element name="ISOAbbreviation"><xsl:value-of select="ISOAbbreviation"/></xsl:element>
+    <xsl:copy-of select="ISOAbbreviation"/>
     <xsl:variable name="ISSN" select="concat('ISSN_', ISSN/@IssnType)"/>
     <xsl:element name='{$ISSN}'><xsl:value-of select="ISSN"/></xsl:element>
-    <xsl:element name='Volume'><xsl:value-of select="JournalIssue/Volume"/></xsl:element>
-    <xsl:element name='Issue'><xsl:value-of select="JournalIssue/Issue"/></xsl:element>
+    <xsl:copy-of select="JournalIssue/Volume"/>
+    <xsl:copy-of select="JournalIssue/Issue"/>
     <xsl:apply-templates select="JournalIssue/PubDate"/>
   </xsl:template>
 
   <xsl:template match="Abstract | OtherAbstract">
     <xsl:element name="{name(.)}">
-      <xsl:if test="@Type">
-        <xsl:attribute name="Type">
-          <xsl:value-of select="@Type"/>
-        </xsl:attribute>
-      </xsl:if>
-      <xsl:if test="@Language">
-        <xsl:attribute name="Language">
-          <xsl:value-of select="@Language"/>
-        </xsl:attribute>
-      </xsl:if>
+      <xsl:copy-of select='@Type'/>
+      <xsl:copy-of select='@Language'/>
       <xsl:for-each select="AbstractText">
         <xsl:if test="@Label">
           <xsl:choose>
@@ -144,9 +134,7 @@
         <xsl:value-of select='text()'/>
       </xsl:for-each>
     </xsl:element>
-    <xsl:element name="CopyrightInformation">
-      <xsl:value-of select='CopyrightInformation'/>
-    </xsl:element>
+    <xsl:copy-of select='CopyrightInformation'/>
   </xsl:template>
 
   <xsl:template match="AuthorList">
@@ -207,9 +195,7 @@
   
   <xsl:template match="KeywordList">
     <xsl:element name="KeywordList">
-      <xsl:attribute name="Owner">
-        <xsl:value-of select="@Owner"/>
-      </xsl:attribute>
+      <xsl:copy-of select='@Owner'/>      
       <xsl:for-each select="Keyword">
         <xsl:if test="position() != 1">, </xsl:if>
         <xsl:value-of select='concat("{Keyword: ", text(), "||MajorTopicYN: ", @MajorTopicYN, "}")'/>
