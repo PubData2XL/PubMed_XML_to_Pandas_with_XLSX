@@ -58,6 +58,7 @@
             <LastName>Pretzel</LastName>
             <ForeName>Rebecca Edmondson</ForeName>
             <Initials>RE</Initials>
+            <Suffix>Jr</Suffix>
             <AffiliationInfo>
               <Affiliation>Carolina Institute for Developmental Disabilities, University of North Carolina at Chapel Hill, Campus Box #7255, Chapel Hill, NC, 27599-7255, USA.</Affiliation>
             </AffiliationInfo>
@@ -69,6 +70,9 @@
             <AffiliationInfo>
               <Affiliation>Department of Biostatistics, Collaborative Studies Coordinating Center, University of North Carolina at Chapel Hill, Campus Box #8030, Chapel Hill, NC, 27516, USA.</Affiliation>
             </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <CollectiveName>OPAL Collective</CollectiveName>
           </Author>
         </AuthorList>
         <Language>eng</Language>

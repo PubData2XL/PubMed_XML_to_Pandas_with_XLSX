@@ -64,7 +64,29 @@
     <xsl:apply-templates select="OtherAbstract"/>
     <xsl:copy-of select="NumberOfReferences"/>
     <xsl:apply-templates select="OtherID"/>
-      
+    <xsl:element name="SpaceFlightMission">
+      <xsl:for-each select="SpaceFlightMission">
+        <xsl:if test="position() != 1">||</xsl:if>
+        <xsl:value-of select='concat("{SpaceFlightMission: ", text(),"}")'/>
+      </xsl:for-each>
+    </xsl:element>
+    <xsl:apply-templates select="SpaceFlightMission"/>
+    <xsl:apply-templates select="GeneralNote"/>
+    <xsl:apply-templates select="ChemicalList"/>
+    <xsl:apply-templates select="InvestigatorList"/>
+    <xsl:apply-templates select="CommentsCorrectionsList"/>
+    <xsl:apply-templates select="GeneSymbolList"/>
+    <xsl:apply-templates select="PersonalNameSubjectList"/>
+    <xsl:copy-of select='CoiStatement'/>
+  </xsl:template>
+
+  <xsl:template match="GeneSymbolList">
+    <xsl:element name="{name(.)}">
+      <xsl:for-each select="GeneSymbol">
+        <xsl:if test="position() != 1">||</xsl:if>
+        <xsl:value-of select='concat("{GeneSymbol: ", text(),"}")'/>
+      </xsl:for-each>
+    </xsl:element>
   </xsl:template>
 
   <xsl:template match="Article">
@@ -137,16 +159,18 @@
     <xsl:copy-of select='CopyrightInformation'/>
   </xsl:template>
 
-  <xsl:template match="AuthorList">
-    <xsl:element name="AuthorList">
-      <xsl:for-each select="Author">
+  <xsl:template match="AuthorList | InvestigatorList | PersonalNameSubjectList">
+    <xsl:element name="{name(.)}">
+      <xsl:for-each select="Author | Investigator | PersonalNameSubject">
+        <xsl:variable name="CollectiveName"><xsl:if test="CollectiveName != ''"><xsl:value-of select ='concat("||CollectiveName: ", CollectiveName)'/></xsl:if></xsl:variable>
         <xsl:variable name="LastName"><xsl:if test="LastName != ''"><xsl:value-of select ='concat("||LastName: ", LastName)'/></xsl:if></xsl:variable>
         <xsl:variable name="ForeName"><xsl:if test="ForeName != ''"><xsl:value-of select ='concat("||ForeName: ", ForeName)'/></xsl:if></xsl:variable>
         <xsl:variable name="Initials"><xsl:if test="Initials != ''"><xsl:value-of select ='concat("||Initials: ", Initials)'/></xsl:if></xsl:variable>
+        <xsl:variable name="Suffix"><xsl:if test="Suffix != ''"><xsl:value-of select ='concat("||Suffix: ", Suffix)'/></xsl:if></xsl:variable>
         <xsl:variable name="Identifier"><xsl:if test="Identifier != ''"><xsl:value-of select ='concat("||", Identifier/@Source, ": ", Identifier, " ")'/></xsl:if></xsl:variable>
         <xsl:variable name="AffiliationInfo"><xsl:for-each select="AffiliationInfo"><xsl:value-of select ='concat("||Affiliation ", position(), ": ", Affiliation)'/></xsl:for-each></xsl:variable>
         <xsl:if test="position() != 1">, </xsl:if>
-        <xsl:value-of select='concat("{Position: ", position(), $LastName, $ForeName, $Initials, $Identifier, $AffiliationInfo, "}")'/>
+        <xsl:value-of select='concat("{Position: ", position(), $CollectiveName, $LastName, $ForeName, $Initials, $Suffix, $Identifier, $AffiliationInfo, "}")'/>
       </xsl:for-each>
     </xsl:element>
   </xsl:template>
@@ -204,8 +228,32 @@
   </xsl:template>
 
   <xsl:template match="OtherID">
-    <xsl:element name="{name(.)}">
+    <xsl:element name="OtherID">
       <xsl:value-of select ='concat("{", "OtherID: ", text(), "||Source: ", @Source, "}")'/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="GeneralNote">
+    <xsl:element name="GeneralNote">
+      <xsl:value-of select='concat("{", "Owner: ", @Owner,"||GeneralNote: ", text(), "}")'/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="ChemicalList">
+    <xsl:element name="ChemicalList">
+      <xsl:for-each select="Chemical">
+        <xsl:if test="position() != 1">, </xsl:if>
+        <xsl:value-of select='concat("{NameOfSubstance: ", NameOfSubstance/text(), "||RegistryNumber: ", RegistryNumber, "||UI: ", NameOfSubstance/@UI, "}")'/> 
+      </xsl:for-each>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="CommentsCorrectionsList">
+    <xsl:element name="CommentsCorrectionsList">
+      <xsl:for-each select="CommentsCorrections">
+        <xsl:if test="position() != 1">, </xsl:if>
+        <xsl:value-of select='concat("{RefType: ", @RefType, "||PMID: ", PMID, "||RefSource: ", RefSource/text(), "}")'/> 
+      </xsl:for-each>
     </xsl:element>
   </xsl:template>
 
