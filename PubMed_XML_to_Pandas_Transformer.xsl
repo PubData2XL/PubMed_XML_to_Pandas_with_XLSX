@@ -47,33 +47,26 @@
     <xsl:element name="Owner">
       <xsl:value-of select="@Owner"/>
     </xsl:element>
-    <xsl:element name="PMID">
-      <xsl:value-of select='PMID'/>
-    </xsl:element>
+    <xsl:copy-of select='PMID'/>
     <xsl:apply-templates select="DateCompleted"/>
     <xsl:apply-templates select="DateRevised"/>
     <xsl:apply-templates select="Article"/>
     <xsl:element name="Journal_Country">
       <xsl:value-of select='MedlineJournalInfo/Country'/>
     </xsl:element>
-    <xsl:element name="MedlineTA">
-      <xsl:value-of select='MedlineJournalInfo/MedlineTA'/>
-    </xsl:element>
-    <xsl:element name="NlmUniqueID">
-      <xsl:value-of select='MedlineJournalInfo/NlmUniqueID'/>
-    </xsl:element>
-    <xsl:element name="ISSNLinking">
-      <xsl:value-of select='MedlineJournalInfo/ISSNLinking'/>
-    </xsl:element>
-    <xsl:element name="CitationSubset">
-      <xsl:value-of select='CitationSubset'/>
-    </xsl:element>
+    <xsl:copy-of select='MedlineJournalInfo/MedlineTA'/>
+    <xsl:copy-of select='MedlineJournalInfo/NlmUniqueID'/>
+    <xsl:copy-of select='MedlineJournalInfo/ISSNLinking'/>
+    <xsl:copy-of select='CitationSubset'/>
     <xsl:apply-templates select="MeshHeadingList"/>
     <xsl:apply-templates select="SupplMeshList"/>
     <xsl:apply-templates select="KeywordList"/>
+    <xsl:apply-templates select="OtherAbstract"/>
+    <xsl:copy-of select="NumberOfReferences"/>
+    <xsl:apply-templates select="OtherID"/>
+      
   </xsl:template>
 
-  <!-- MedlineCitation/Article -->
   <xsl:template match="Article">
     <xsl:element name="PubModel">
       <xsl:value-of select="@PubModel"/>
@@ -125,8 +118,18 @@
     <xsl:apply-templates select="JournalIssue/PubDate"/>
   </xsl:template>
 
-  <xsl:template match="Abstract">
-    <xsl:element name="Abstract">
+  <xsl:template match="Abstract | OtherAbstract">
+    <xsl:element name="{name(.)}">
+      <xsl:if test="@Type">
+        <xsl:attribute name="Type">
+          <xsl:value-of select="@Type"/>
+        </xsl:attribute>
+      </xsl:if>
+      <xsl:if test="@Language">
+        <xsl:attribute name="Language">
+          <xsl:value-of select="@Language"/>
+        </xsl:attribute>
+      </xsl:if>
       <xsl:for-each select="AbstractText">
         <xsl:if test="@Label">
           <xsl:choose>
@@ -181,7 +184,6 @@
       </xsl:for-each>
     </xsl:element>
   </xsl:template>
-  <!-- End of MedlineCitation/Article -->
 
   <xsl:template match="MeshHeadingList">
     <xsl:element name="MeshHeadingList">
@@ -212,6 +214,12 @@
         <xsl:if test="position() != 1">, </xsl:if>
         <xsl:value-of select='concat("{Keyword: ", text(), "||MajorTopicYN: ", @MajorTopicYN, "}")'/>
       </xsl:for-each>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="OtherID">
+    <xsl:element name="{name(.)}">
+      <xsl:value-of select ='concat("{", "OtherID: ", text(), "||Source: ", @Source, "}")'/>
     </xsl:element>
   </xsl:template>
 
