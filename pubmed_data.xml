@@ -483,7 +483,7 @@
         </Reference>
       </ReferenceList>
       <ObjectList>
-        <Object>
+        <Object Type="Data">
           <Param>This is an additional data field to store other data.</Param>
         </Object>
       </ObjectList>

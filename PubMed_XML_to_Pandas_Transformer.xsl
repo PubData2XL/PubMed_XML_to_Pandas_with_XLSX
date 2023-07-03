@@ -18,8 +18,8 @@
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="DateCompleted | DateRevised | PubDate | ArticleDate">
-    <xsl:variable name="date_element"><xsl:value-of select ="name(.)"/></xsl:variable>
+  <xsl:template match="DateCompleted | DateRevised | PubDate | ArticleDate | PubMedPubDate">
+    <xsl:variable name="date_element"><xsl:value-of select ="name(.)"/><xsl:if test="@PubStatus != ''"><xsl:value-of select ="concat('_', @PubStatus)"/></xsl:if></xsl:variable>
     <xsl:variable name="date_type"><xsl:if test="@DateType != ''"><xsl:value-of select ="concat('_', @DateType)"/></xsl:if></xsl:variable>
     <xsl:variable name="Year"><xsl:if test="Year != ''"><xsl:value-of select ="Year"/></xsl:if></xsl:variable>
     <xsl:variable name="Month"><xsl:if test="Month != ''"><xsl:value-of select ="concat('-', Month)"/></xsl:if></xsl:variable>
@@ -260,12 +260,52 @@
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="PubmedData">
-    <xsl:element name="History">
-        <xsl:value-of select="@val"/>
-      </xsl:element>
-  </xsl:template>
+  <!-- End MedlineCitation -->
   
+  <!-- PubmedData -->
+
+  <xsl:template match="PubmedData">
+    <xsl:apply-templates select="History/PubMedPubDate"/>
+    <xsl:copy-of select="PublicationStatus"/>    
+    <xsl:apply-templates select="ArticleIdList"/>
+    <xsl:apply-templates select="ObjectList"/>
+    <xsl:apply-templates select="ReferenceList"/>
+  </xsl:template>
+
+  <xsl:template match="ReferenceList">
+    <xsl:element name="ReferenceList">
+      <xsl:for-each select="Reference">
+        <xsl:variable name="Citation"><xsl:value-of select="concat('||Citation: ', Citation)"/></xsl:variable>
+        <xsl:variable name="ArticleIdList"><xsl:if test="ArticleIdList !=''">||</xsl:if><xsl:apply-templates select="ArticleIdList"/></xsl:variable>
+        <xsl:if test="position() != 1">, </xsl:if>
+        <xsl:value-of select='concat("{Position: ", position(), $Citation, $ArticleIdList, "}")'/>
+      </xsl:for-each>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="ArticleIdList">
+    <xsl:element name="ArticleIdList">
+      <xsl:for-each select="ArticleId">
+        <xsl:if test="position() != 1">||</xsl:if>
+        <xsl:value-of select='concat(@IdType, ": ", text())'/>
+      </xsl:for-each>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="ObjectList">
+    <xsl:element name="ObjectList">
+      <xsl:for-each select="Object">
+        <xsl:variable name="Params"><xsl:for-each select="Param"><xsl:if test="position() != 1">||</xsl:if><xsl:value-of select ='text()'/></xsl:for-each></xsl:variable>
+        <xsl:if test="position() != 1">||</xsl:if>
+        <xsl:value-of select='concat(@Type, ": ", $Params)'/>
+      </xsl:for-each>
+    </xsl:element>
+  </xsl:template>
+
+  <!-- End PubmedData -->
+
+  <!-- BookDocument -->
+
   <xsl:template match="BookDocument">
     <xsl:element name="Type">PubmedBookArticle</xsl:element>
   </xsl:template>
