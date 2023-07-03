@@ -664,6 +664,7 @@
           </Author>
         </AuthorList>
         <Language>eng</Language>
+        <Language>spa</Language>
         <PublicationTypeList>
           <PublicationType UI="D016428">Journal Article</PublicationType>
           <PublicationType UI="D016454">Review</PublicationType>

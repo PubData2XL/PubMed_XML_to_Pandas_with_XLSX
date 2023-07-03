@@ -83,11 +83,23 @@
     <xsl:copy-of select='VernacularTitle'/>
     <xsl:apply-templates select="Pagination"/>
     <xsl:element name="ELocationID">
-      <xsl:value-of select='concat("{", ELocationID/@EIdType,": ",ELocationID, "}")'/>
+      <xsl:for-each select="ELocationID">
+        <xsl:if test="position() = 1">{</xsl:if>
+        <xsl:if test="position() != 1">||</xsl:if>
+        <xsl:value-of select='concat( @EIdType,": ", text())'/>
+        <xsl:if test="position() = last()">}</xsl:if>
+      </xsl:for-each>
     </xsl:element>
     <xsl:apply-templates select="Abstract"/>
-    <xsl:apply-templates select="AuthorList"/> 
-    <xsl:copy-of select="Language"/>
+    <xsl:apply-templates select="AuthorList"/>
+    <xsl:element name="Language">
+      <xsl:for-each select="Language">
+        <xsl:if test="position() = 1">{</xsl:if>
+        <xsl:if test="position() != 1">||</xsl:if>
+        <xsl:value-of select='text()'/>
+        <xsl:if test="position() = last()">}</xsl:if>
+      </xsl:for-each>
+    </xsl:element>
     <xsl:apply-templates select="GrantList"/> 
     <xsl:apply-templates select="PublicationTypeList"/>
     <xsl:apply-templates select="ArticleDate"/>
