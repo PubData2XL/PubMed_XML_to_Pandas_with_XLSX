@@ -17,6 +17,7 @@
       <xsl:apply-templates select="PubmedBookData"/>
     </xsl:element>
   </xsl:template>
+  <!-- test -->
 
   <xsl:template match="DateCompleted | DateRevised | PubDate | ArticleDate | PubMedPubDate">
     <xsl:variable name="date_element"><xsl:value-of select ="name(.)"/><xsl:if test="@PubStatus != ''"><xsl:value-of select ="concat('_', @PubStatus)"/></xsl:if></xsl:variable>
