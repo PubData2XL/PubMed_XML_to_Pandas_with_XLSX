@@ -15,7 +15,7 @@
         <Year>2021</Year>
         <Month>10</Month>
       </DateRevised>
-      <Article PubModel="Print-Electronic">
+      <Article PubModel="Electronic-eCollection">
         <Journal>
           <ISSN IssnType="Electronic">1573-3432</ISSN>
           <JournalIssue CitedMedium="Internet">
@@ -23,7 +23,6 @@
             <Issue>10</Issue>
             <PubDate>
               <Year>2021</Year>
-              <Season>Autumn</Season>
             </PubDate>
           </JournalIssue>
           <Title>Journal of autism and developmental disorders</Title>
@@ -593,27 +592,25 @@
         <Month>10</Month>
         <Day>12</Day>
       </DateRevised>
-      <Article PubModel="Print-Electronic">
+      <Article PubModel="Electronic-eCollection">
         <Journal>
-          <ISSN IssnType="Print">1549-4713</ISSN>
+          <ISSN IssnType="Electronic">1664-8021</ISSN>
           <JournalIssue CitedMedium="Internet">
-            <Volume>128</Volume>
-            <Issue>6</Issue>
+            <Volume>3</Volume>
             <PubDate>
-              <Year>2021</Year>
-              <Month>06</Month>
+              <Year>2012</Year>
             </PubDate>
           </JournalIssue>
-          <Title>Ophthalmology</Title>
-          <ISOAbbreviation>Ophthalmology</ISOAbbreviation>
+          <Title>Frontiers in genetics</Title>
+          <ISOAbbreviation>Front Genet</ISOAbbreviation>
         </Journal>
-        <ArticleTitle>Reducing the Global Burden of Myopia by Delaying the Onset of Myopia and Reducing Myopic Progression in Children: The Academy's Task Force on Myopia.</ArticleTitle>
+        <ArticleTitle>Genetics of melanoma.</ArticleTitle>
         <Pagination>
-          <StartPage>816</StartPage>
-          <EndPage>826</EndPage>
+          <StartPage>330</StartPage>
+          <MedlinePgn>330</MedlinePgn>
         </Pagination>
-        <ELocationID EIdType="pii" ValidYN="Y">S0161-6420(20)31043-5</ELocationID>
-        <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.ophtha.2020.10.040</ELocationID>
+        <ELocationID EIdType="pii" ValidYN="Y">330</ELocationID>
+        <ELocationID EIdType="doi" ValidYN="Y">10.3389/fgene.2012.00330</ELocationID>
         <Abstract>
           <AbstractText>In 2019, the American Academy of Ophthalmology (AAO) created the Task Force on Myopia in recognition of the substantial global increases in myopia prevalence and its associated complications. The Task Force, led by Richard L. Abbott, MD, and Donald Tan, MD, comprised recognized experts in myopia prevention and treatment, public health experts from around the world, and organization representatives from the American Academy of Family Physicians, American Academy of Optometry, and American Academy of Pediatrics. The Academy's Board of Trustees believes that myopia is a high-priority cause of visual impairment, warranting a timely evaluation and synthesis of the scientific literature and formulation of an action plan to address the issue from different perspectives. This includes education of physicians and other health care providers, patients and their families, schools, and local and national public health agencies; defining health policies to ameliorate patients' access to appropriate therapy and to promote effective public health interventions; and fostering promising avenues of research.</AbstractText>
           <CopyrightInformation>Copyright © 2020 American Academy of Ophthalmology. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
@@ -670,9 +667,9 @@
           <PublicationType UI="D016454">Review</PublicationType>
         </PublicationTypeList>
         <ArticleDate DateType="Electronic">
-          <Year>2020</Year>
-          <Month>12</Month>
-          <Day>30</Day>
+          <Year>2013</Year>
+          <Month>01</Month>
+          <Day>25</Day>
         </ArticleDate>
       </Article>
       <MedlineJournalInfo>
