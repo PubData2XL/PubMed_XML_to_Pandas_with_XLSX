@@ -165,32 +165,71 @@
     <xsl:copy-of select='CopyrightInformation'/>
   </xsl:template>
 
+  <xsl:template match="Author | Investigator | PersonalNameSubject" mode="all_data">
+    <xsl:variable name="CollectiveName"><xsl:if test="CollectiveName != ''"><xsl:value-of select ='concat("\CollectiveName: ", CollectiveName)'/></xsl:if></xsl:variable>
+    <xsl:variable name="LastName"><xsl:if test="LastName != ''"><xsl:value-of select ='concat("\LastName: ", LastName)'/></xsl:if></xsl:variable>
+    <xsl:variable name="ForeName"><xsl:if test="ForeName != ''"><xsl:value-of select ='concat("\ForeName: ", ForeName)'/></xsl:if></xsl:variable>
+    <xsl:variable name="Initials"><xsl:if test="Initials != ''"><xsl:value-of select ='concat("\Initials: ", Initials)'/></xsl:if></xsl:variable>
+    <xsl:variable name="Suffix"><xsl:if test="Suffix != ''"><xsl:value-of select ='concat("\Suffix: ", Suffix)'/></xsl:if></xsl:variable>
+    <xsl:variable name="Identifier"><xsl:if test="Identifier != ''"><xsl:value-of select ='concat("\", Identifier/@Source, ": ", Identifier, " ")'/></xsl:if></xsl:variable>
+    <xsl:variable name="AffiliationInfo"><xsl:for-each select="AffiliationInfo"><xsl:value-of select ='concat("\Affiliation ", position(), ": ", Affiliation)'/></xsl:for-each></xsl:variable>
+    <xsl:if test="position() != 1">||</xsl:if>
+    <xsl:value-of select='concat("Position: ", position(), $CollectiveName, $LastName, $ForeName, $Initials, $Suffix, $Identifier, $AffiliationInfo)'/>
+  </xsl:template>
+
+   <xsl:template match="Author | Investigator | PersonalNameSubject" mode="fullnames">
+    <xsl:variable name="CollectiveName" select="CollectiveName"/>
+    <xsl:variable name="LastName" select ='LastName'/>
+    <xsl:variable name="ForeName"><xsl:if test="ForeName != ''"><xsl:value-of select ='concat(", ", ForeName)'/></xsl:if></xsl:variable>
+    <xsl:variable name="Suffix"><xsl:if test="Suffix != ''"><xsl:value-of select ='concat(" ", Suffix)'/></xsl:if></xsl:variable>
+    <xsl:if test="position() != 1">||</xsl:if>
+    <xsl:value-of select='concat($CollectiveName, $LastName, $ForeName, $Suffix)'/>
+  </xsl:template>
+
+  <xsl:template match="Author | Investigator | PersonalNameSubject" mode="abbreviated">
+    <xsl:variable name="CollectiveName" select="CollectiveName"/>
+    <xsl:variable name="LastName" select ='LastName'/>
+    <xsl:variable name="Initials"><xsl:if test="Initials != ''"><xsl:value-of select ='concat(" ", Initials)'/></xsl:if></xsl:variable>
+    <xsl:if test="position() != 1">||</xsl:if>
+    <xsl:value-of select='concat($CollectiveName, $LastName, $Initials)'/>
+  </xsl:template>
+
   <xsl:template match="AuthorList | InvestigatorList | PersonalNameSubjectList">
     <xsl:element name="{name(.)}">
-      <xsl:for-each select="Author | Investigator | PersonalNameSubject">
-        <xsl:variable name="CollectiveName"><xsl:if test="CollectiveName != ''"><xsl:value-of select ='concat("||CollectiveName: ", CollectiveName)'/></xsl:if></xsl:variable>
-        <xsl:variable name="LastName"><xsl:if test="LastName != ''"><xsl:value-of select ='concat("||LastName: ", LastName)'/></xsl:if></xsl:variable>
-        <xsl:variable name="ForeName"><xsl:if test="ForeName != ''"><xsl:value-of select ='concat("||ForeName: ", ForeName)'/></xsl:if></xsl:variable>
-        <xsl:variable name="Initials"><xsl:if test="Initials != ''"><xsl:value-of select ='concat("||Initials: ", Initials)'/></xsl:if></xsl:variable>
-        <xsl:variable name="Suffix"><xsl:if test="Suffix != ''"><xsl:value-of select ='concat("||Suffix: ", Suffix)'/></xsl:if></xsl:variable>
-        <xsl:variable name="Identifier"><xsl:if test="Identifier != ''"><xsl:value-of select ='concat("||", Identifier/@Source, ": ", Identifier, " ")'/></xsl:if></xsl:variable>
-        <xsl:variable name="AffiliationInfo"><xsl:for-each select="AffiliationInfo"><xsl:value-of select ='concat("||Affiliation ", position(), ": ", Affiliation)'/></xsl:for-each></xsl:variable>
-        <xsl:if test="position() != 1">, </xsl:if>
-        <xsl:value-of select='concat("{Position: ", position(), $CollectiveName, $LastName, $ForeName, $Initials, $Suffix, $Identifier, $AffiliationInfo, "}")'/>
-      </xsl:for-each>
+      <xsl:apply-templates select="Author | Investigator | PersonalNameSubject" mode="all_data"/>
     </xsl:element>
+    <xsl:element name="{concat(name(.), '_Fullnames')}">
+      <xsl:apply-templates select="Author | Investigator | PersonalNameSubject" mode="fullnames"/>
+    </xsl:element>
+    <xsl:element name="{concat(name(.), '_Abbreviated')}">
+      <xsl:apply-templates select="Author | Investigator | PersonalNameSubject" mode="abbreviated"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="Grant" mode="all_data">
+    <xsl:variable name="GrantID"><xsl:if test="GrantID != ''"><xsl:value-of select ='concat("||GrantID: ", GrantID)'/></xsl:if></xsl:variable>
+    <xsl:variable name="Acronym"><xsl:if test="Acronym != ''"><xsl:value-of select ='concat("||Acronym: ", Acronym)'/></xsl:if></xsl:variable>
+    <xsl:variable name="Agency"><xsl:if test="Agency != ''"><xsl:value-of select ='concat("||Agency: ", Agency)'/></xsl:if></xsl:variable>
+    <xsl:variable name="Country"><xsl:if test="Country != ''"><xsl:value-of select ='concat("||Country: ", Country)'/></xsl:if></xsl:variable>
+    <xsl:if test="position() != 1">, </xsl:if>
+    <xsl:value-of select='concat("{Position: ", position(), $GrantID, $Acronym, $Agency, $Country, "}")'/>
+  </xsl:template>
+
+  <xsl:template match="Grant" mode="grant_number">
+    <xsl:variable name="GrantID" select ='GrantID'/>
+    <xsl:variable name="Acronym"><xsl:if test="Acronym != ''"><xsl:value-of select ='concat("\", Acronym)'/></xsl:if></xsl:variable>
+    <xsl:variable name="Agency"><xsl:if test="Agency != ''"><xsl:value-of select ='concat("\", Agency)'/></xsl:if></xsl:variable>
+    <xsl:variable name="Country"><xsl:if test="Country != ''"><xsl:value-of select ='concat("\", Country)'/></xsl:if></xsl:variable>
+    <xsl:if test="position() != 1">||</xsl:if>
+    <xsl:value-of select='concat($GrantID, $Acronym, $Agency, $Country)'/>
   </xsl:template>
 
   <xsl:template match="GrantList">
     <xsl:element name="GrantList">
-      <xsl:for-each select="Grant">
-        <xsl:variable name="GrantID"><xsl:if test="GrantID != ''"><xsl:value-of select ='concat("||GrantID: ", GrantID)'/></xsl:if></xsl:variable>
-        <xsl:variable name="Acronym"><xsl:if test="Acronym != ''"><xsl:value-of select ='concat("||Acronym: ", Acronym)'/></xsl:if></xsl:variable>
-        <xsl:variable name="Agency"><xsl:if test="Agency != ''"><xsl:value-of select ='concat("||Agency: ", Agency)'/></xsl:if></xsl:variable>
-        <xsl:variable name="Country"><xsl:if test="Country != ''"><xsl:value-of select ='concat("||Country: ", Country)'/></xsl:if></xsl:variable>
-        <xsl:if test="position() != 1">, </xsl:if>
-        <xsl:value-of select='concat("{Position: ", position(), $GrantID, $Acronym, $Agency, $Country, "}")'/>
-      </xsl:for-each>
+      <xsl:apply-templates select="Grant" mode="all_data"/>
+    </xsl:element>
+    <xsl:element name="Grant_Number">
+      <xsl:apply-templates select="Grant" mode="grant_number"/>
     </xsl:element>
   </xsl:template>
 
