@@ -17,21 +17,21 @@
       <xsl:apply-templates select="PubmedBookData"/>
     </xsl:element>
   </xsl:template>
-
+  
+  <!-- All Date type fields -->
   <xsl:template match="DateCompleted | DateRevised | PubDate | ArticleDate | PubMedPubDate">
     <xsl:variable name="date_element"><xsl:value-of select ="name(.)"/><xsl:if test="@PubStatus != ''"><xsl:value-of select ="concat('_', @PubStatus)"/></xsl:if></xsl:variable>
     <xsl:variable name="date_type"><xsl:if test="@DateType != ''"><xsl:value-of select ="concat('_', @DateType)"/></xsl:if></xsl:variable>
     <xsl:variable name="Year"><xsl:if test="Year != ''"><xsl:value-of select ="Year"/></xsl:if></xsl:variable>
     <xsl:variable name="Month"><xsl:if test="Month != ''"><xsl:value-of select ="concat('-', Month)"/></xsl:if></xsl:variable>
     <xsl:variable name="Day"><xsl:if test="Day != ''"><xsl:value-of select ="concat('-', Day)"/></xsl:if></xsl:variable>
-    <!-- <xsl:variable name="Hour"><xsl:if test="Hour != ''"><xsl:value-of select ="concat(' ', Hour)"/></xsl:if></xsl:variable> -->
-    <!-- <xsl:variable name="Minute"><xsl:if test="Minute != ''"><xsl:value-of select ="concat(':', Minute)"/></xsl:if></xsl:variable> -->
-    <!-- <xsl:variable name="Second"><xsl:if test="Second != ''"><xsl:value-of select ="concat(':', Second)"/></xsl:if></xsl:variable> -->
+    <xsl:variable name="Hour"><xsl:if test="Hour != ''"><xsl:value-of select ="concat(' ', Hour)"/></xsl:if></xsl:variable>
+    <xsl:variable name="Minute"><xsl:if test="Minute != ''"><xsl:value-of select ="concat(':', Minute)"/></xsl:if></xsl:variable>
+    <xsl:variable name="Second"><xsl:if test="Second != ''"><xsl:value-of select ="concat(':', Second)"/></xsl:if></xsl:variable>
     <xsl:variable name="Season"><xsl:if test="Season != ''"><xsl:value-of select ="concat('-', Season)"/></xsl:if></xsl:variable>
     
     <xsl:element name="{concat($date_element, $date_type)}">
-      <!-- Hour, Minute and Second have note been implemented yet. -->
-      <xsl:value-of select ="concat($Year, $Month, $Day, $Season)"/>
+      <xsl:value-of select ="concat($Year, $Month, $Day, $Season, $Hour, $Minute, $Second)"/>
     </xsl:element>
   </xsl:template>
 
@@ -84,20 +84,16 @@
     <xsl:apply-templates select="Pagination"/>
     <xsl:element name="ELocationID">
       <xsl:for-each select="ELocationID">
-        <xsl:if test="position() = 1">{</xsl:if>
         <xsl:if test="position() != 1">||</xsl:if>
         <xsl:value-of select='concat( @EIdType,": ", text())'/>
-        <xsl:if test="position() = last()">}</xsl:if>
       </xsl:for-each>
     </xsl:element>
     <xsl:apply-templates select="Abstract"/>
     <xsl:apply-templates select="AuthorList"/>
     <xsl:element name="Language">
       <xsl:for-each select="Language">
-        <xsl:if test="position() = 1">{</xsl:if>
         <xsl:if test="position() != 1">||</xsl:if>
         <xsl:value-of select='text()'/>
-        <xsl:if test="position() = last()">}</xsl:if>
       </xsl:for-each>
     </xsl:element>
     <xsl:apply-templates select="GrantList"/> 
@@ -233,12 +229,23 @@
     </xsl:element>
   </xsl:template>
 
+  <xsl:template match="PublicationType" mode="all_data">
+    <xsl:if test="position() != 1">||</xsl:if>
+    <xsl:value-of select='concat(text(), "\UI: ", @UI)'/>
+  </xsl:template>
+
+  
+  <xsl:template match="PublicationType" mode="clean">
+    <xsl:if test="position() != 1">||</xsl:if>
+    <xsl:value-of select='text()'/>
+  </xsl:template>
+
   <xsl:template match="PublicationTypeList">
+    <xsl:element name="PublicationTypeList_all_data">
+      <xsl:apply-templates select="PublicationType" mode="all_data"/>
+    </xsl:element>
     <xsl:element name="PublicationTypeList">
-      <xsl:for-each select="PublicationType">
-        <xsl:if test="position() != 1">, </xsl:if>
-        <xsl:value-of select='concat("{PublicationType: ", text(), "||UI: ", @UI, "}")'/>
-      </xsl:for-each>
+      <xsl:apply-templates select="PublicationType" mode="clean"/>
     </xsl:element>
   </xsl:template>
 
@@ -326,10 +333,10 @@
   <xsl:template match="ReferenceList">
     <xsl:element name="ReferenceList">
       <xsl:for-each select="Reference">
-        <xsl:variable name="Citation"><xsl:value-of select="concat('||Citation: ', Citation)"/></xsl:variable>
-        <xsl:variable name="ArticleIdList"><xsl:if test="ArticleIdList !=''">||</xsl:if><xsl:apply-templates select="ArticleIdList"/></xsl:variable>
-        <xsl:if test="position() != 1">, </xsl:if>
-        <xsl:value-of select='concat("{Position: ", position(), $Citation, $ArticleIdList, "}")'/>
+        <xsl:variable name="Citation"><xsl:value-of select="concat('\Citation: ', Citation)"/></xsl:variable>
+        <xsl:variable name="ArticleIdList"><xsl:if test="ArticleIdList !=''">\</xsl:if><xsl:apply-templates select="ArticleIdList"/></xsl:variable>
+        <xsl:if test="position() != 1">||</xsl:if>
+        <xsl:value-of select='concat("Position: ", position(), $Citation, $ArticleIdList)'/>
       </xsl:for-each>
     </xsl:element>
   </xsl:template>
@@ -337,7 +344,7 @@
   <xsl:template match="ArticleIdList">
     <xsl:element name="ArticleIdList">
       <xsl:for-each select="ArticleId">
-        <xsl:if test="position() != 1">||</xsl:if>
+        <xsl:if test="position() != 1">\</xsl:if>
         <xsl:value-of select='concat(@IdType, ": ", text())'/>
       </xsl:for-each>
     </xsl:element>

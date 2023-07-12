@@ -22,7 +22,7 @@
             <Volume>51</Volume>
             <Issue>10</Issue>
             <PubDate>
-              <Year>2021</Year>
+              <Year>2023</Year>
             </PubDate>
           </JournalIssue>
           <Title>Journal of autism and developmental disorders</Title>
@@ -102,6 +102,9 @@
           <Year>2021</Year>
           <Month>01</Month>
           <Day>02</Day>
+          <Hour>07</Hour>
+          <Minute>16</Minute>
+          <Second>05</Second>
         </ArticleDate>
       </Article>
       <MedlineJournalInfo>
@@ -592,13 +595,15 @@
         <Month>10</Month>
         <Day>12</Day>
       </DateRevised>
-      <Article PubModel="Electronic-eCollection">
+      <Article PubModel="Electronic">
         <Journal>
           <ISSN IssnType="Electronic">1664-8021</ISSN>
           <JournalIssue CitedMedium="Internet">
             <Volume>3</Volume>
             <PubDate>
               <Year>2012</Year>
+              <Month>10</Month>
+              <Day>12</Day>
             </PubDate>
           </JournalIssue>
           <Title>Frontiers in genetics</Title>
