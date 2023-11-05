@@ -168,7 +168,14 @@
     <xsl:variable name="Initials"><xsl:if test="Initials != ''"><xsl:value-of select ='concat("\Initials: ", Initials)'/></xsl:if></xsl:variable>
     <xsl:variable name="Suffix"><xsl:if test="Suffix != ''"><xsl:value-of select ='concat("\Suffix: ", Suffix)'/></xsl:if></xsl:variable>
     <xsl:variable name="Identifier"><xsl:if test="Identifier != ''"><xsl:value-of select ='concat("\", Identifier/@Source, ": ", Identifier, " ")'/></xsl:if></xsl:variable>
-    <xsl:variable name="AffiliationInfo"><xsl:for-each select="AffiliationInfo"><xsl:value-of select ='concat("\Affiliation ", position(), ": ", Affiliation)'/></xsl:for-each></xsl:variable>
+    <xsl:variable name="AffiliationInfo">
+      <xsl:if test="not(AffiliationInfo)">\Affiliation not available</xsl:if>
+      <xsl:for-each select="AffiliationInfo">
+        <xsl:if test="position() = 1">\</xsl:if>
+        <xsl:if test="position() != 1"> - </xsl:if>
+        <xsl:value-of select ='concat("Affiliation ", position(), ": ", Affiliation)'/>
+      </xsl:for-each>
+    </xsl:variable>
     <xsl:if test="position() != 1">||</xsl:if>
     <xsl:value-of select='concat("Position: ", position(), $CollectiveName, $LastName, $ForeName, $Initials, $Suffix, $Identifier, $AffiliationInfo)'/>
   </xsl:template>
