@@ -1,0 +1,594 @@
+<?xml version="1.0"?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2023//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_230101.dtd">
+<PubmedArticleSet>
+    <PubmedBookArticle>
+        <BookDocument>
+            <PMID Version="1">29262162</PMID>
+            <ArticleIdList>
+                <ArticleId IdType="bookaccession">NBK470395</ArticleId>
+            </ArticleIdList>
+            <Book>
+                <Publisher>
+                    <PublisherName>StatPearls Publishing</PublisherName>
+                    <PublisherLocation>Treasure Island (FL)</PublisherLocation>
+                </Publisher>
+                <BookTitle book="statpearls">StatPearls</BookTitle>
+                <PubDate>
+                    <Year>2023</Year>
+                    <Month>01</Month>
+                </PubDate>
+                <BeginningDate>
+                    <Year>2023</Year>
+                    <Month>01</Month>
+                </BeginningDate>
+                <AuthorList Type="authors" CompleteYN="Y">
+                    <Author ValidYN="Y">
+                        <LastName>Test</LastName>
+                        <ForeName>Steven</ForeName>
+                        <Initials>S</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>University of Nebraska Medical Center</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                </AuthorList>
+                <InvestigatorList>
+                    <Investigator>
+                        <LastName>Carlsson</LastName>
+                        <ForeName>Christer</ForeName>
+                        <Initials>C</Initials>
+                    </Investigator>
+                    <Investigator>
+                        <LastName>Cecchi</LastName>
+                        <ForeName>Francesca</ForeName>
+                        <Initials>F</Initials>
+                    </Investigator>
+                </InvestigatorList>
+                <Volume>20</Volume>
+                <VolumeTitle>testting</VolumeTitle>
+                <Edition>2nd</Edition>
+                <CollectionTitle book="nicepmg">NICE Process and Methods Guides</CollectionTitle>
+                <Isbn>9781473119086</Isbn>
+                <ELocationID EIdType="pii" ValidYN="Y">330</ELocationID>
+                <ELocationID EIdType="doi" ValidYN="Y">10.3389/fgene.2012.00330</ELocationID>
+                <Medium>Internet</Medium>
+                <ReportNumber>Process and Methods Guides No. 12</ReportNumber>
+            </Book>
+            <LocationLabel Type="chapter">Chapter 45</LocationLabel>
+            <ArticleTitle book="statpearls" part="article-28135">Qualitative Study</ArticleTitle>
+            <VernacularTitle>¿Cómo hablo con mi familia sobre Gaucher?</VernacularTitle>
+            <Pagination>
+                <StartPage>1</StartPage>
+                <EndPage>11</EndPage>
+            </Pagination>
+            <Language>eng</Language>
+            <AuthorList Type="authors" CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Tenny</LastName>
+                    <ForeName>Steven</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>University of Nebraska Medical Center</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brannan</LastName>
+                    <ForeName>Janelle M.</ForeName>
+                    <Initials>JM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>GDB Research and Statistical Consulting</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brannan</LastName>
+                    <ForeName>Grace D.</ForeName>
+                    <Initials>GD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>GDB Research and Statistical Consulting/McLaren Macomb Hospital</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <InvestigatorList>
+                <Investigator>
+                    <LastName>Carlsson</LastName>
+                    <ForeName>Christer</ForeName>
+                    <Initials>C</Initials>
+                </Investigator>
+                <Investigator>
+                    <LastName>Cecchi</LastName>
+                    <ForeName>Francesca</ForeName>
+                    <Initials>F</Initials>
+                </Investigator>
+            </InvestigatorList>
+            <PublicationType UI="D000072643">Study Guide</PublicationType>
+            <Abstract>
+                <AbstractText>Qualitative research is a type of research that explores and provides
+                    deeper insights into real-world problems. Instead of collecting numerical data
+                    points or intervene or introduce treatments just like in quantitative research,
+                    qualitative research helps generate hypotheses as well as further investigate
+                    and understand quantitative data. Qualitative research gathers participants'
+                    experiences, perceptions, and behavior. It answers the hows and whys instead of
+                    how many or how much. It could be structured as a stand-alone study, purely
+                    relying on qualitative data or it could be part of mixed-methods research that
+                    combines qualitative and quantitative data. This review introduces the readers
+                    to some basic concepts, definitions, terminology, and application of qualitative
+                    research. Qualitative research at its core, ask open-ended questions whose
+                    answers are not easily put into numbers such as &#x2018;how&#x2019; and
+                    &#x2018;why&#x2019;. Due to the open-ended nature of the research questions at
+                    hand, qualitative research design is often not linear in the same way
+                    quantitative design is. One of the strengths of qualitative research is its
+                    ability to explain processes and patterns of human behavior that can be
+                    difficult to quantify. Phenomena such as experiences, attitudes, and behaviors
+                    can be difficult to accurately capture quantitatively, whereas a qualitative
+                    approach allows participants themselves to explain how, why, or what they were
+                    thinking, feeling, and experiencing at a certain time or during an event of
+                    interest. Quantifying qualitative data certainly is possible, but at its core,
+                    qualitative data is looking for themes and patterns that can be difficult to
+                    quantify and it is important to ensure that the context and narrative of
+                    qualitative work are not lost by trying to quantify something that is not meant
+                    to be quantified. However, while qualitative research is sometimes placed in
+                    opposition to quantitative research, where they are necessarily opposites and
+                    therefore &#x2018;compete&#x2019; against each other and the philosophical
+                    paradigms associated with each, qualitative and quantitative work are not
+                    necessarily opposites nor are they incompatible. While qualitative and
+                    quantitative approaches are different, they are not necessarily opposites, and
+                    they are certainly not mutually exclusive. For instance, qualitative research
+                    can help expand and deepen understanding of data or results obtained from
+                    quantitative analysis. For example, say a quantitative analysis has determined
+                    that there is a correlation between length of stay and level of patient
+                    satisfaction, but <i>why</i> does this correlation exist? This dual-focus
+                    scenario shows one way in which qualitative and quantitative research could be
+                    integrated together. <b>Examples of Qualitative Research Approaches</b><i>
+                    Ethnography</i> Ethnography as a research design has its origins in social and
+                    cultural anthropology, and involves the researcher being directly immersed in
+                    the participant&#x2019;s environment. Through this immersion, the ethnographer
+                    can use a variety of data collection techniques with the aim of being able to
+                    produce a comprehensive account of the social phenomena that occurred during the
+                    research period. That is to say, the researcher&#x2019;s aim with ethnography is
+                    to <i>immerse</i> themselves into the research population and come out of it
+                    with accounts of actions, behaviors, events, etc. through the eyes of someone
+                    involved in the population. Direct involvement of the researcher with the target
+                    population is one benefit of ethnographic research because it can then be
+                    possible to find data that is otherwise very difficult to extract and record. <i>Grounded
+                    Theory</i> Grounded Theory is the &#x201c;generation of a theoretical model
+                    through the experience of observing a study population and developing a
+                    comparative analysis of their speech and behavior.&#x201d; As opposed to
+                    quantitative research which is deductive and tests or verifies an existing
+                    theory, grounded theory research is inductive and therefore lends itself to
+                    research that is aiming to study social interactions or experiences. In essence,
+                    Grounded Theory&#x2019;s goal is to explain for example how and why an event
+                    occurs or how and why people might behave a certain way. Through observing the
+                    population, a researcher using the Grounded Theory approach can then develop a
+                    theory to explain the phenomena of interest. <i>Phenomenology</i> Phenomenology
+                    is defined as the &#x201c;study of the meaning of phenomena or the study of the
+                    particular&#x201d;. At first glance, it might seem that Grounded Theory and
+                    Phenomenology are quite similar, but upon careful examination, the differences
+                    can be seen. At its core, phenomenology looks to investigate experiences from
+                    the perspective of the individual. Phenomenology is essentially looking into the
+                    &#x2018;lived experiences&#x2019; of the participants and aims to examine how
+                    and why participants behaved a certain way, <i>from their perspective</i>.
+                    Herein lies one of the main differences between Grounded Theory and
+                    Phenomenology. Grounded Theory aims to develop a theory for social phenomena
+                    through an examination of various data sources whereas Phenomenology focuses on
+                    describing and explaining an event or phenomena from the perspective of those
+                    who have experienced it. <i>Narrative Research</i> One of qualitative
+                    research&#x2019;s strengths lies in its ability to tell a story, often from the
+                    perspective of those directly involved in it. Reporting on qualitative research
+                    involves including details and descriptions of the setting involved and quotes
+                    from participants. This detail is called &#x2018;thick&#x2019; or
+                    &#x2018;rich&#x2019; description and is a strength of qualitative research.
+                    Narrative research is rife with the possibilities of &#x2018;thick&#x2019;
+                    description as this approach weaves together a sequence of events, usually from
+                    just one or two individuals, in the hopes of creating a cohesive story, or
+                    narrative. While it might seem like a waste of time to focus on such a specific,
+                    individual level, understanding one or two people&#x2019;s narratives for an
+                    event or phenomenon can help to inform researchers about the influences that
+                    helped shape that narrative. The tension or conflict of differing narratives can
+                    be &#x201c;opportunities for innovation&#x201d;. <b>Research Paradigm</b>
+                    Research paradigms are the assumptions, norms, and standards that underpin
+                    different approaches to research. Essentially, research paradigms are the
+                    &#x2018;worldview&#x2019; that inform research. It is valuable for researchers,
+                    both qualitative and quantitative, to understand what paradigm they are working
+                    within because understanding the theoretical basis of research paradigms allows
+                    researchers to understand the strengths and weaknesses of the approach being
+                    used and adjust accordingly. Different paradigms have different <i>ontology </i>
+                    and <i>epistemologies</i>. Ontology is defined as the "assumptions about the
+                    nature of reality&#x201d; whereas epistemology is defined as the
+                    &#x201c;assumptions about the nature of knowledge&#x201d; that inform the work
+                    researchers do. It is important to understand the ontological and
+                    epistemological foundations of the research paradigm researchers are working
+                    within to allow for a full understanding of the approach being used and the
+                    assumptions that underpin the approach as a whole. Further, it is crucial that
+                    researchers understand their own ontological and epistemological assumptions
+                    about the world in general because their assumptions about the world will
+                    necessarily impact how they interact with research. A discussion of the research
+                    paradigm is not complete without describing positivist, postpositivist, and
+                    constructivist philosophies. <i>Positivist vs Postpositivist</i> To further
+                    understand qualitative research, we need to discuss positivist and
+                    postpositivist frameworks. Positivism is a philosophy that the scientific method
+                    can and should be applied to social as well as natural sciences. Essentially,
+                    positivist thinking insists that the social sciences should use natural science
+                    methods in its research which stems from positivist ontology that there is an
+                    objective reality that exists that is fully independent of our perception of the
+                    world as individuals. Quantitative research is rooted in positivist philosophy,
+                    which can be seen in the value it places on concepts such as causality,
+                    generalizability, and replicability. Conversely, postpositivists argue that
+                    social reality can never be one hundred percent explained but it could be
+                    approximated. Indeed, qualitative researchers have been insisting that there are
+                    &#x201c;fundamental limits to the extent to which the methods and procedures of
+                    the natural sciences could be applied to the social world&#x201d; and therefore
+                    postpositivist philosophy is often associated with qualitative research. An
+                    example of positivist versus postpositivist values in research might be that
+                    positivist philosophies value hypothesis-testing, whereas postpositivist
+                    philosophies value the ability to formulate a substantive theory. <i>
+                    Constructivist</i> Constructivism is a subcategory of postpositivism. Most
+                    researchers invested in postpositivist research are constructivist as well,
+                    meaning they think there is no objective external reality that exists but rather
+                    that reality is constructed. Constructivism is a theoretical lens that
+                    emphasizes the dynamic nature of our world. &#x201c;Constructivism contends that
+                    individuals&#x2019; views are directly influenced by their experiences, and it
+                    is these individual experiences and views that shape their perspective of
+                    reality&#x201d;. Essentially, Constructivist thought focuses on how
+                    &#x2018;reality&#x2019; is not a fixed certainty and experiences, interactions,
+                    and backgrounds give people a unique view of the world. Constructivism contends,
+                    unlike in positivist views, that there is not necessarily an
+                    &#x2018;objective&#x2019; reality we all experience. This is the
+                    &#x2018;relativist&#x2019; ontological view that reality and the world we live
+                    in are dynamic and socially constructed. Therefore, qualitative scientific
+                    knowledge can be inductive as well as deductive.&#x201d; So why is it important
+                    to understand the differences in assumptions that different philosophies and
+                    approaches to research have? Fundamentally, the assumptions underpinning the
+                    research tools a researcher selects provide an overall base for the assumptions
+                    the rest of the research will have and can even change the role of the
+                    researcher themselves. For example, is the researcher an
+                    &#x2018;objective&#x2019; observer such as in positivist quantitative work? Or
+                    is the researcher an active participant in the research itself, as in
+                    postpositivist qualitative work? Understanding the philosophical base of the
+                    research undertaken allows researchers to fully understand the implications of
+                    their work and their role within the research, as well as reflect on their own
+                    positionality and bias as it pertains to the research they are conducting. <b>Data
+                    Sampling&#xa0;</b> The better the sample represents the intended study
+                    population, the more likely the researcher is to encompass the varying factors
+                    at play.&#xa0;The following are examples of participant sampling and selection:
+                    Purposive sampling- selection based on the researcher&#x2019;s rationale in
+                    terms of being the most informative. Criterion sampling-selection based on
+                    pre-identified factors. Convenience sampling- selection based on availability.
+                    Snowball sampling- the selection is by referral from other participants or
+                    people who know potential participants. Extreme case sampling- targeted
+                    selection of rare cases. Typical case sampling-selection based on regular or
+                    average participants.&#xa0;. <b>Data Collection and Analysis</b> Qualitative
+                    research uses several techniques including interviews, focus groups, and
+                    observation.[1][2][3] Interviews may be unstructured, with open-ended questions
+                    on a topic and the interviewer adapts to the responses. Structured interviews
+                    have a predetermined number of questions that every participant is asked. It is
+                    usually one on one and is appropriate for sensitive topics or topics needing an
+                    in-depth exploration. Focus groups are often held with 8-12 target participants
+                    and are used when group dynamics and collective views on a topic are desired.
+                    Researchers can be a participant-observer to share the experiences of the
+                    subject or a non-participant or detached observer. While quantitative research
+                    design prescribes a controlled environment for data collection, qualitative data
+                    collection may be in a central location or in the environment of the
+                    participants, depending on the study goals and design. Qualitative research
+                    could amount to a large amount of data. Data is transcribed which may then be
+                    coded manually or with the use of Computer Assisted Qualitative Data Analysis
+                    Software or CAQDAS such as ATLAS.ti or NVivo. After the coding process,
+                    qualitative research results could be in various formats. It could be a
+                    synthesis and interpretation presented with excerpts from the data. Results also
+                    could be in the form of themes and theory or model development. <b>Dissemination</b>
+                    To standardize and facilitate the dissemination of qualitative research
+                    outcomes, the healthcare team can use two reporting standards. The Consolidated
+                    Criteria for Reporting Qualitative Research or COREQ is a 32-item checklist for
+                    interviews and focus groups. The Standards for Reporting Qualitative Research
+                    (SRQR) is a checklist covering a wider range of qualitative research. <b>Examples
+                    of Application</b> Many&#xa0;times&#xa0;a research question will start with
+                    qualitative research. The qualitative research will help generate the research
+                    hypothesis which can be tested with quantitative methods. After the data is
+                    collected and analyzed with quantitative methods, a set of qualitative methods
+                    can be used to dive deeper into the data for a better understanding of what the
+                    numbers truly mean and their implications. The qualitative methods can then help
+                    clarify the quantitative data and also help refine the hypothesis for future
+                    research. Furthermore, with qualitative research researchers can
+                    explore&#xa0;subjects that are poorly studied
+                    with&#xa0;quantitative&#xa0;methods. These include opinions, individual's
+                    actions, and social science research. A good qualitative study design starts
+                    with a goal or objective. This should be clearly defined or stated. The target
+                    population needs to be specified. A method for obtaining information from the
+                    study population must&#xa0;be carefully detailed to ensure there are no
+                    omissions of part of the target population. A proper collection method should be
+                    selected which will help obtain the desired information without overly limiting
+                    the collected data because many times, the information sought is not well
+                    compartmentalized or obtained. Finally, the design should ensure adequate
+                    methods for analyzing the data. An example may help better clarify&#xa0;some of
+                    the various aspects of&#xa0;qualitative research. A researcher wants to decrease
+                    the number of teenagers who&#xa0;smoke in their community. The
+                    researcher&#xa0;could begin&#xa0;by asking current teen smokers why they started
+                    smoking through structured or unstructured interviews&#xa0;(qualitative
+                    research). The researcher can also get together a group of current teenage
+                    smokers and conduct a focus group to help brainstorm factors that may have
+                    prevented them from starting to smoke (qualitative research). In this example,
+                    the researcher has used qualitative research methods (interviews and focus
+                    groups) to generate a list of ideas of both why teens start to smoke as well as
+                    factors that may have prevented them from starting to smoke. Next, the
+                    researcher compiles this data. The research found
+                    that,&#xa0;hypothetically,&#xa0;peer pressure, health issues, cost, being
+                    considered &#x201c;cool,&#x201d; and rebellious behavior all might increase or
+                    decrease the likelihood of teens starting to smoke. The researcher creates a
+                    survey asking teen participants to rank how important each of the above factors
+                    is in either starting smoking (for current smokers) or not smoking (for current
+                    non-smokers). This survey provides specific numbers (ranked importance of each
+                    factor) and is thus a quantitative research tool. The researcher&#xa0;can use
+                    the results of the survey to focus efforts on the one or two highest-ranked
+                    factors. Let us say the researcher found that health was the major factor that
+                    keeps teens from starting to smoke, and peer pressure was the major factor that
+                    contributed to teens to start smoking. The researcher can go back to qualitative
+                    research methods to dive deeper into each of these for more information. The
+                    researcher wants to focus on how to keep teens from starting to smoke, so they
+                    focus on the peer pressure aspect. The researcher&#xa0;can conduct interviews
+                    and/or focus groups (qualitative research) about what types and forms of peer
+                    pressure are commonly encountered, where the peer pressure comes from, and where
+                    smoking first starts. The researcher hypothetically finds that peer pressure
+                    often occurs after school at the local teen hangouts,&#xa0;mostly the local
+                    park. The researcher also hypothetically finds that peer pressure comes from
+                    older, current smokers&#xa0;who provide the cigarettes. The researcher could
+                    further explore this observation made at the local teen hangouts (qualitative
+                    research) and take notes regarding who is smoking, who is not, and what
+                    observable factors are at play for peer pressure of smoking. The researcher
+                    finds a local park where many local teenagers hang out and see that a shady,
+                    overgrown area of the park is where the smokers tend to hang out. The researcher
+                    notes the smoking teenagers buy their cigarettes from a local convenience store
+                    adjacent to the park where the clerk does not check identification before
+                    selling cigarettes. These observations fall under qualitative research. If the
+                    researcher returns to the park and counts how many individuals smoke in each
+                    region of the park, this numerical data would be quantitative research. Based on
+                    the researcher's efforts thus far, they conclude that local teen smoking and
+                    teenagers who start to smoke may decrease if there are fewer overgrown areas of
+                    the park and the local convenience store does not&#xa0;sell&#xa0;cigarettes to
+                    underage&#xa0;individuals. The researcher could try to have the parks department
+                    reassess the shady areas to make them less conducive to the smokers or identify
+                    how to limit the sales of cigarettes to underage individuals by
+                    the&#xa0;convenience&#xa0;store. The researcher would then cycle back to
+                    qualitative methods of asking at-risk population their perceptions of the
+                    changes, what factors are still at play, as&#xa0;well&#xa0;as quantitative
+                    research that includes teen smoking rates in the community, the incidence of new
+                    teen smokers, among others.</AbstractText>
+                <CopyrightInformation>Copyright &#xa9; 2023, StatPearls Publishing LLC.</CopyrightInformation>
+            </Abstract>
+            <Sections>
+                <Section>
+                    <SectionTitle book="statpearls" part="article-28135" sec="article-28135.s1">Introduction</SectionTitle>
+                </Section>
+                <Section>
+                    <SectionTitle book="statpearls" part="article-28135" sec="article-28135.s2">
+                        Function</SectionTitle>
+                </Section>
+                <Section>
+                    <SectionTitle book="statpearls" part="article-28135" sec="article-28135.s3">Issues
+                        of Concern</SectionTitle>
+                </Section>
+                <Section>
+                    <SectionTitle book="statpearls" part="article-28135" sec="article-28135.s4">Clinical
+                        Significance</SectionTitle>
+                </Section>
+                <Section>
+                    <SectionTitle book="statpearls" part="article-28135" sec="article-28135.s5">Enhancing
+                        Healthcare Team Outcomes</SectionTitle>
+                </Section>
+                <Section>
+                    <SectionTitle book="statpearls" part="article-28135" sec="article-28135.s6">Review
+                        Questions</SectionTitle>
+                </Section>
+                <Section>
+                    <SectionTitle book="statpearls" part="article-28135" sec="article-28135.s7">
+                        References</SectionTitle>
+                </Section>
+            </Sections>
+            <KeywordList Owner="NOTNLM">
+                <Keyword>NICE process and methods guides</Keyword>
+                <Keyword>process guide/guidance</Keyword>
+                <Keyword>good practice guidance</Keyword>
+                <Keyword>NICE Guidelines</Keyword>
+                <Keyword>medicines</Keyword>
+                <Keyword>prescribing</Keyword>
+                <Keyword>commissioning medicines</Keyword>
+                <Keyword>good practice</Keyword>
+            </KeywordList>
+            <ContributionDate>
+                <Year>2022</Year>
+                <Month>9</Month>
+                <Day>18</Day>
+            </ContributionDate>
+            <DateRevised>
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>16</Day>
+            </DateRevised>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>HHSN263201200074I</GrantID>
+                    <Acronym>OD</Acronym>
+                    <Agency>NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <ItemList ListType="Synonyms">
+                <Item>Gordon’s Syndrome</Item>
+                <Item>Familial Hyperkalemic Hypertension</Item>
+                <Item>PHAII</Item>
+            </ItemList>
+            <ReferenceList>
+                <Reference>
+                    <Citation>Moser A, Korstjens I. Series: Practical guidance to qualitative
+                        research. Part 1: Introduction. Eur J Gen Pract. 2017 Dec;23(1):271-273.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC8816396</ArticleId>
+                        <ArticleId IdType="pubmed">29185831</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Cleland JA. The qualitative orientation in medical education research.
+                        Korean J Med Educ. 2017 Jun;29(2):61-71.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC5465434</ArticleId>
+                        <ArticleId IdType="pubmed">28597869</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Foley G, Timonen V. Using Grounded Theory Method to Capture and
+                        Analyze Health Care Experiences. Health Serv Res. 2015 Aug;50(4):1195-210.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC4545354</ArticleId>
+                        <ArticleId IdType="pubmed">25523315</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Devers KJ. How will we know "good" qualitative research when we see
+                        it? Beginning the dialogue in health services research. Health Serv Res.
+                        1999 Dec;34(5 Pt 2):1153-88.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC1089058</ArticleId>
+                        <ArticleId IdType="pubmed">10591278</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Huston P, Rowan M. Qualitative studies. Their role in medical
+                        research. Can Fam Physician. 1998 Nov;44:2453-8.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC2277956</ArticleId>
+                        <ArticleId IdType="pubmed">9839063</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Corner EJ, Murray EJ, Brett SJ. Qualitative, grounded theory
+                        exploration of patients' experience of early mobilisation, rehabilitation
+                        and recovery after critical illness. BMJ Open. 2019 Feb 24;9(2):e026348.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC6443050</ArticleId>
+                        <ArticleId IdType="pubmed">30804034</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Moser A, Korstjens I. Series: Practical guidance to qualitative
+                        research. Part 3: Sampling, data collection and analysis. Eur J Gen Pract.
+                        2018 Dec;24(1):9-18.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC5774281</ArticleId>
+                        <ArticleId IdType="pubmed">29199486</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Houghton C, Murphy K, Meehan B, Thomas J, Brooker D, Casey D. From
+                        screening to synthesis: using nvivo to enhance transparency in qualitative
+                        evidence synthesis. J Clin Nurs. 2017 Mar;26(5-6):873-881.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pubmed">27324875</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Soratto J, Pires DEP, Friese S. Thematic content analysis using
+                        ATLAS.ti software: Potentialities for researchs in health. Rev Bras Enferm.
+                        2020;73(3):e20190250.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pubmed">32321144</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Zamawe FC. The Implication of Using NVivo Software in Qualitative Data
+                        Analysis: Evidence-Based Reflections. Malawi Med J. 2015 Mar;27(1):13-5.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC4478399</ArticleId>
+                        <ArticleId IdType="pubmed">26137192</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Korstjens I, Moser A. Series: Practical guidance to qualitative
+                        research. Part 4: Trustworthiness and publishing. Eur J Gen Pract. 2018
+                        Dec;24(1):120-124.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC8816392</ArticleId>
+                        <ArticleId IdType="pubmed">29202616</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Tong A, Sainsbury P, Craig J. Consolidated criteria for reporting
+                        qualitative research (COREQ): a 32-item checklist for interviews and focus
+                        groups. Int J Qual Health Care. 2007 Dec;19(6):349-57.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pubmed">17872937</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>O'Brien BC, Harris IB, Beckman TJ, Reed DA, Cook DA. Standards for
+                        reporting qualitative research: a synthesis of recommendations. Acad Med.
+                        2014 Sep;89(9):1245-51.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pubmed">24979285</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Palermo C, King O, Brock T, Brown T, Crampton P, Hall H, Macaulay J,
+                        Morphet J, Mundy M, Oliaro L, Paynter S, Williams B, Wright C, E Rees C.
+                        Setting priorities for health education research: A mixed methods study. Med
+                        Teach. 2019 Sep;41(9):1029-1038.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pubmed">31141390</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Tscholl DW, Handschin L, R&#xf6;ssler J, Weiss M, Spahn DR,
+                        N&#xf6;thiger CB. It's not you, it's the design - common problems with
+                        patient monitoring reported by anesthesiologists: a mixed qualitative and
+                        quantitative study. BMC Anesthesiol. 2019 May 28;19(1):87.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC6540409</ArticleId>
+                        <ArticleId IdType="pubmed">31138143</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Grossoehme DH. Overview of qualitative research. J Health Care
+                        Chaplain. 2014;20(3):109-22.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pmc">PMC4609437</ArticleId>
+                        <ArticleId IdType="pubmed">24926897</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+                <Reference>
+                    <Citation>Delaney H, Devane D, Hunter A, Hennessy M, Parker A, Murphy L, Cronin
+                        P, Smith V. Limited evidence exists on the effectiveness of education and
+                        training interventions on trial recruitment; a systematic review. J Clin
+                        Epidemiol. 2019 Sep;113:75-82.</Citation>
+                    <ArticleIdList>
+                        <ArticleId IdType="pubmed">31128220</ArticleId>
+                    </ArticleIdList>
+                </Reference>
+            </ReferenceList>
+        </BookDocument>
+        <PubmedBookData>
+            <History>
+                <PubMedPubDate PubStatus="pubmed">
+                    <Year>2017</Year>
+                    <Month>2</Month>
+                    <Day>18</Day>
+                    <Hour>6</Hour>
+                    <Minute>1</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="medline">
+                    <Year>2017</Year>
+                    <Month>2</Month>
+                    <Day>18</Day>
+                    <Hour>6</Hour>
+                    <Minute>1</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="entrez">
+                    <Year>2017</Year>
+                    <Month>2</Month>
+                    <Day>18</Day>
+                    <Hour>6</Hour>
+                    <Minute>1</Minute>
+                </PubMedPubDate>
+            </History>
+            <PublicationStatus>ppublish</PublicationStatus>
+            <ArticleIdList>
+                <ArticleId IdType="pubmed">28211659</ArticleId>
+            </ArticleIdList>
+        </PubmedBookData>
+    </PubmedBookArticle>
+</PubmedArticleSet>
